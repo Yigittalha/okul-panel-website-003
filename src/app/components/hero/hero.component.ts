@@ -21,60 +21,64 @@ import { fadeInAnimation, slideUpAnimation } from '../../animations/page-animati
           <!-- Left Column - Text Content -->
           <div class="text-center lg:text-left" [@fadeIn]>
             <h1 
-              class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight hero-main-title"
               [@slideUp]
             >
-              Eğitimin
-              <span class="text-accent-500 block">Dijital Geleceği</span>
-              Burada Başlıyor
+              <span class="hero-title-line" style="animation-delay: 0.1s">Eğitimin</span>
+              <span class="text-accent-500 block hero-title-line hero-accent" style="animation-delay: 0.2s">Dijital Geleceği</span>
+              <span class="hero-title-line" style="animation-delay: 0.3s">Burada Başlıyor</span>
             </h1>
             
             <p 
-              class="text-xl lg:text-2xl text-white/80 mb-8 max-w-2xl mx-auto lg:mx-0"
+              class="text-xl lg:text-2xl text-white/80 mb-8 max-w-2xl mx-auto lg:mx-0 hero-description"
               [@slideUp]
+              style="animation-delay: 0.4s"
             >
               Okul yönetiminizi kolaylaştıran, öğrenci başarısını artıran ve velilerle 
               iletişimi güçlendiren kapsamlı eğitim yönetim sistemi.
             </p>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" [@slideUp]>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start hero-cta-container" [@slideUp] style="animation-delay: 0.5s">
               <button 
-                class="btn-primary text-lg px-8 py-4 shadow-2xl hover:shadow-accent-500/25"
+                class="btn-primary text-lg px-8 py-4 shadow-2xl hover:shadow-accent-500/25 hero-cta-primary"
                 (click)="requestDemo()"
+                style="animation-delay: 0.6s"
               >
                 Ücretsiz Demo Talep Et
               </button>
               <button 
-                class="btn-secondary text-lg px-8 py-4 border-white/30 text-white hover:bg-white hover:text-primary-950"
+                class="btn-secondary text-lg px-8 py-4 border-white/30 text-white hover:bg-white hover:text-primary-950 hero-cta-secondary"
                 (click)="downloadBrochure()"
+                style="animation-delay: 0.7s"
               >
                 Broşür İndir
               </button>
               <button 
-                class="bg-gradient-to-r from-green-500 to-emerald-600 text-white text-lg px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-green-500/30 hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-green-300"
+                class="bg-gradient-to-r from-green-500 to-emerald-600 text-white text-lg px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-green-500/30 hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-green-300 hero-cta-special"
                 (click)="startLiveDemo()"
+                style="animation-delay: 0.8s"
               >
                 🚀 Canlı Demo
               </button>
             </div>
 
             <!-- Trust Indicators -->
-            <div class="mt-12 flex flex-wrap justify-center lg:justify-start gap-6 text-white/60" [@slideUp]>
-              <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-accent-500" fill="currentColor" viewBox="0 0 24 24">
+            <div class="mt-12 flex flex-wrap justify-center lg:justify-start gap-6 text-white/60 hero-trust-container" [@slideUp] style="animation-delay: 0.9s">
+              <div class="flex items-center space-x-2 hero-trust-item" style="animation-delay: 1.0s">
+                <svg class="w-5 h-5 text-accent-500 hero-trust-icon" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
                 </svg>
                 <span class="text-sm font-medium">KVKK Uyumlu</span>
               </div>
-              <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-accent-500" fill="currentColor" viewBox="0 0 24 24">
+              <div class="flex items-center space-x-2 hero-trust-item" style="animation-delay: 1.1s">
+                <svg class="w-5 h-5 text-accent-500 hero-trust-icon" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 1L3 5v6c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V5l-9-4z"/>
                 </svg>
                 <span class="text-sm font-medium">ISO 27001</span>
               </div>
-              <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-accent-500" fill="currentColor" viewBox="0 0 24 24">
+              <div class="flex items-center space-x-2 hero-trust-item" style="animation-delay: 1.2s">
+                <svg class="w-5 h-5 text-accent-500 hero-trust-icon" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
                 <span class="text-sm font-medium">%99.9 Uptime</span>
@@ -175,6 +179,191 @@ import { fadeInAnimation, slideUpAnimation } from '../../animations/page-animati
   styles: [`
     :host {
       display: block;
+    }
+
+    /* Hero Text Animations */
+    .hero-title-line {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: heroTitleSlide 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+
+    .hero-accent {
+      background: linear-gradient(135deg, #FFD60A 0%, #FFC107 50%, #FFD60A 100%);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: heroTitleSlide 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards, 
+                 heroAccentGlow 3s ease-in-out infinite;
+    }
+
+    .hero-description {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: heroDescriptionSlide 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+
+    .hero-cta-container {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: heroCtaSlide 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+
+    .hero-cta-primary,
+    .hero-cta-secondary,
+    .hero-cta-special {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+      animation: heroButtonSlide 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .hero-cta-primary:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(255, 214, 10, 0.3);
+    }
+
+    .hero-cta-secondary:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(255, 255, 255, 0.2);
+    }
+
+    .hero-cta-special:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 15px 35px rgba(34, 197, 94, 0.4);
+    }
+
+    .hero-trust-container {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: heroTrustSlide 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+
+    .hero-trust-item {
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: heroTrustItemSlide 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .hero-trust-item:hover {
+      transform: translateX(5px);
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .hero-trust-icon {
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      animation: heroTrustIconPulse 2s ease-in-out infinite;
+    }
+
+    .hero-trust-item:hover .hero-trust-icon {
+      transform: scale(1.2) rotate(5deg);
+      color: #FFD60A;
+    }
+
+    /* Keyframe Animations */
+    @keyframes heroTitleSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes heroAccentGlow {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    @keyframes heroDescriptionSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes heroCtaSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes heroButtonSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes heroTrustSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes heroTrustItemSlide {
+      0% {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes heroTrustIconPulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    /* Reduced Motion Support */
+    @media (prefers-reduced-motion: reduce) {
+      .hero-title-line,
+      .hero-accent,
+      .hero-description,
+      .hero-cta-container,
+      .hero-cta-primary,
+      .hero-cta-secondary,
+      .hero-cta-special,
+      .hero-trust-container,
+      .hero-trust-item,
+      .hero-trust-icon {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
     }
   `],
 })

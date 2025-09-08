@@ -18,7 +18,7 @@ import { Counter } from '../../shared/utils/counter';
       
       <main class="pt-20">
         <!-- Header -->
-        <section class="section py-20 bg-gradient-to-br from-primary-950 to-primary-800 text-white">
+        <section class="section py-20 gradient-bg text-white">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl lg:text-6xl font-bold mb-6">
               Şeffaf <span class="text-accent-500">Fiyatlandırma</span>
