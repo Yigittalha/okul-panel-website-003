@@ -1,0 +1,25 @@
+// App container for route animations
+.app-container {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+  
+  // Improve animation performance
+  will-change: transform, opacity;
+  
+  // Content visibility optimization
+  .section {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 1000px;
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

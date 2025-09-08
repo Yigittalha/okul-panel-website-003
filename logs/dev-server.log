@@ -1,0 +1,4607 @@
+Sun Sep  7 14:22:33 +03 2025: Script started
+Sun Sep  7 14:22:33 +03 2025: Starting server (attempt 1)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names                      |  Raw size
+styles.css           | styles                     |  63.33 kB | 
+main.js              | main                       |   3.59 kB | 
+chunk-YQOESBWP.js    | -                          | 754 bytes | 
+
+                     | Initial total              |  67.68 kB
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-KAOSHRMK.js    | landing-component          | 145.09 kB | 
+chunk-E3FM7O7H.js    | kvkk-component             |  26.98 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component          |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                      |  Raw size
+main.server.mjs      | main.server                |   4.84 kB | 
+server.mjs           | server                     |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                          | 788 bytes | 
+polyfills.server.mjs | polyfills.server           | 243 bytes | 
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-XDJMCXR4.mjs   | landing-component          | 145.12 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component             |  27.02 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component          |   9.64 kB | 
+
+Application bundle generation complete. [2.045 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://172.20.10.4:4200/
+Sun Sep  7 14:26:50 +03 2025: Script started
+Sun Sep  7 14:26:50 +03 2025: Starting server (attempt 1)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names                      |  Raw size
+styles.css           | styles                     |  63.33 kB | 
+main.js              | main                       |   3.59 kB | 
+chunk-YQOESBWP.js    | -                          | 754 bytes | 
+
+                     | Initial total              |  67.68 kB
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-KAOSHRMK.js    | landing-component          | 145.09 kB | 
+chunk-E3FM7O7H.js    | kvkk-component             |  26.98 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component          |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                      |  Raw size
+main.server.mjs      | main.server                |   4.84 kB | 
+server.mjs           | server                     |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                          | 788 bytes | 
+polyfills.server.mjs | polyfills.server           | 243 bytes | 
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-XDJMCXR4.mjs   | landing-component          | 145.12 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component             |  27.02 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component          |   9.64 kB | 
+
+Application bundle generation complete. [2.145 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://172.20.10.4:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                   |  Raw size
+styles.css          | styles                  |  64.64 kB | 
+main.js             | main                    |   3.83 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-2Z6QBZWS.js   | landing-component       | 129.04 kB | 
+chunk-ZPUOU2G7.js   | ozellik-detay-component |  32.50 kB | 
+chunk-3B3BEQUL.js   | -                       |  16.20 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                   |  Raw size
+main.server.mjs     | main.server             |   5.07 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-GG2H62E3.mjs  | landing-component       | 129.08 kB | 
+chunk-AEGWGTSI.mjs  | ozellik-detay-component |  32.54 kB | 
+chunk-MXP6BR7U.mjs  | -                       |  16.23 kB | 
+
+Application bundle generation complete. [0.619 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              |   3.83 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-4LLBJB2M.js   | landing-component | 129.04 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+main.server.mjs     | main.server       |   5.07 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-M6RUWS2P.mjs  | landing-component | 129.08 kB | 
+
+Application bundle generation complete. [0.304 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.277 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'navigateToFeature' does not exist on type 'FeaturesComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/features/features.component.ts:33:25:
+[37m      33 │                 (click)="[32mnavigateToFeature[37m(feature.id)"
+         ╵                          [32m~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.248 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'navigateToFeature' does not exist on type 'FeaturesComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/features/features.component.ts:33:25:
+[37m      33 │                 (click)="[32mnavigateToFeature[37m(feature.id)"
+         ╵                          [32m~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                      |  Raw size
+styles.css           | styles                     |  64.64 kB | 
+main.js              | main                       |   3.83 kB | 
+chunk-YQOESBWP.js    | -                          | 754 bytes | 
+
+                     | Initial total              |  69.22 kB
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-M7IZGARQ.js    | landing-component          | 129.73 kB | 
+chunk-ZPUOU2G7.js    | ozellik-detay-component    |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component             |  26.98 kB | 
+chunk-3B3BEQUL.js    | -                          |  16.20 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component          |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                      |  Raw size
+main.server.mjs      | main.server                |   5.07 kB | 
+server.mjs           | server                     |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                          | 788 bytes | 
+polyfills.server.mjs | polyfills.server           | 243 bytes | 
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-ZMQZVWXA.mjs   | landing-component          | 129.77 kB | 
+chunk-AEGWGTSI.mjs   | ozellik-detay-component    |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component             |  27.02 kB | 
+chunk-MXP6BR7U.mjs   | -                          |  16.23 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component          |   9.64 kB | 
+
+Application bundle generation complete. [0.193 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+styles.css          | styles            |  67.91 kB | 
+main.js             | main              |   3.83 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-BAEN7RGY.js   | landing-component | 129.73 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+main.server.mjs     | main.server       |   5.07 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-6RBDQSZ7.mjs  | landing-component | 129.77 kB | 
+
+Application bundle generation complete. [0.781 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              |   3.83 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-L2FHIGTV.js   | landing-component | 171.65 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+main.server.mjs     | main.server       |   5.07 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-AEN3QT2I.mjs  | landing-component | 171.69 kB | 
+
+Application bundle generation complete. [0.195 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: PricingComponent is not used within the template of LandingComponent[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing.component.ts:23:4:
+[37m      23 │     [32mPricingComponent[37m,
+         ╵     [32m~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+2:34:22 PM [vite] (ssr) ✨ new dependencies optimized: @angular/forms
+2:34:22 PM [vite] (ssr) ✨ optimized dependencies changed. reloading
+ERROR RuntimeError: NG0203: The `EnvironmentInjector` token injection failed. `inject()` function must be called from an injection context such as a constructor, a factory function, a field initializer, or a function used with `runInInjectionContext`. Find more at https://angular.dev/errors/NG0203
+    at injectInjectorOnly (/Users/yigit/Desktop/okul-panel-web/okul-panel/.angular/cache/20.2.2/okul-panel/vite/deps_ssr/chunk-TXH25U4Z.js:10989:11)
+    at ɵɵinject (/Users/yigit/Desktop/okul-panel-web/okul-panel/.angular/cache/20.2.2/okul-panel/vite/deps_ssr/chunk-TXH25U4Z.js:11006:59)
+    at Object.factory (/Users/yigit/Desktop/okul-panel-web/okul-panel/.angular/cache/20.2.2/okul-panel/vite/deps_ssr/chunk-TXH25U4Z.js:22129:45)
+    at eval (/Users/yigit/Desktop/okul-panel-web/okul-panel/.angular/cache/20.2.2/okul-panel/vite/deps_ssr/chunk-TXH25U4Z.js:11668:35)
+    at runInInjectorProfilerContext (/Users/yigit/Desktop/okul-panel-web/okul-panel/.angular/cache/20.2.2/okul-panel/vite/deps_ssr/chunk-TXH25U4Z.js:10834:5)
+    at R3Injector.hydrate (/Users/yigit/Desktop/okul-panel-web/okul-panel/.angular/cache/20.2.2/okul-panel/vite/deps_ssr/chunk-TXH25U4Z.js:11666:11)
+    at R3Injector.get (/Users/yigit/Desktop/okul-panel-web/okul-panel/.angular/cache/20.2.2/okul-panel/vite/deps_ssr/chunk-TXH25U4Z.js:11560:23)
+    at Object.def.getStandaloneInjector (/Users/yigit/Desktop/okul-panel-web/okul-panel/.angular/cache/20.2.2/okul-panel/vite/deps_ssr/chunk-TXH25U4Z.js:22150:31)
+    at createRootViewInjector (/Users/yigit/Desktop/okul-panel-web/okul-panel/.angular/cache/20.2.2/okul-panel/vite/deps_ssr/chunk-TXH25U4Z.js:20915:44)
+    at ComponentFactory2.create (/Users/yigit/Desktop/okul-panel-web/okul-panel/.angular/cache/20.2.2/okul-panel/vite/deps_ssr/chunk-TXH25U4Z.js:20986:32) {
+  code: -203
+}
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              |   3.83 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-VILITRJR.js   | landing-component | 170.14 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+main.server.mjs     | main.server       |   5.07 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-LU67E2LE.mjs  | landing-component | 170.18 kB | 
+
+Application bundle generation complete. [0.297 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+2:35:13 PM [vite] (client) ✨ new dependencies optimized: @angular/forms
+2:35:13 PM [vite] (client) ✨ optimized dependencies changed. reloading
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                      |  Raw size
+styles.css           | styles                     |  67.91 kB | 
+main.js              | main                       |   3.83 kB | 
+chunk-YQOESBWP.js    | -                          | 754 bytes | 
+
+                     | Initial total              |  72.49 kB
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-VILITRJR.js    | landing-component          | 170.14 kB | 
+chunk-ZPUOU2G7.js    | ozellik-detay-component    |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component             |  26.98 kB | 
+chunk-3B3BEQUL.js    | -                          |  16.20 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component          |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                      |  Raw size
+main.server.mjs      | main.server                |   5.07 kB | 
+server.mjs           | server                     |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                          | 788 bytes | 
+polyfills.server.mjs | polyfills.server           | 243 bytes | 
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-LU67E2LE.mjs   | landing-component          | 170.18 kB | 
+chunk-AEGWGTSI.mjs   | ozellik-detay-component    |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component             |  27.02 kB | 
+chunk-MXP6BR7U.mjs   | -                          |  16.23 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component          |   9.64 kB | 
+
+Application bundle generation complete. [0.598 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                      |  Raw size
+styles.css           | styles                     |  67.91 kB | 
+main.js              | main                       |   3.83 kB | 
+chunk-YQOESBWP.js    | -                          | 754 bytes | 
+
+                     | Initial total              |  72.49 kB
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-VILITRJR.js    | landing-component          | 170.14 kB | 
+chunk-ZPUOU2G7.js    | ozellik-detay-component    |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component             |  26.98 kB | 
+chunk-3B3BEQUL.js    | -                          |  16.20 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component          |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                      |  Raw size
+main.server.mjs      | main.server                |   5.07 kB | 
+server.mjs           | server                     |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                          | 788 bytes | 
+polyfills.server.mjs | polyfills.server           | 243 bytes | 
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-LU67E2LE.mjs   | landing-component          | 170.18 kB | 
+chunk-AEGWGTSI.mjs   | ozellik-detay-component    |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component             |  27.02 kB | 
+chunk-MXP6BR7U.mjs   | -                          |  16.23 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component          |   9.64 kB | 
+
+Application bundle generation complete. [0.273 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              |   3.83 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-6K75XTPZ.js   | landing-component | 170.11 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+main.server.mjs     | main.server       |   5.07 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-MM6BKQ6D.mjs  | landing-component | 170.15 kB | 
+
+Application bundle generation complete. [0.376 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              |   3.83 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-PTKFKCT6.js   | landing-component | 170.11 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+main.server.mjs     | main.server       |   5.07 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-MR34YFXY.mjs  | landing-component | 170.14 kB | 
+
+Application bundle generation complete. [0.257 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                   |  Raw size
+styles.css          | styles                  |  68.97 kB | 
+main.js             | main                    |   4.06 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-UDUE5PR3.js   | landing-component       | 110.08 kB | 
+chunk-CSRSPQ7H.js   | -                       |  60.09 kB | 
+chunk-QLRNSSV6.js   | fiyatlandirma-component |  28.19 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                   |  Raw size
+main.server.mjs     | main.server             |   5.31 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-TFUWT5WS.mjs  | landing-component       | 110.12 kB | 
+chunk-YOMKMENS.mjs  | -                       |  60.13 kB | 
+chunk-736K2G7Z.mjs  | fiyatlandirma-component |  28.23 kB | 
+
+Application bundle generation complete. [0.321 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.235 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG1010: 'imports' must be an array of components, directives, pipes, or NgModules.
+  Value could not be determined statically.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing.component.ts:22:4:
+[37m      22 │     [32mPricingComponent[37m,
+         ╵     [32m~~~~~~~~~~~~~~~~[0m
+
+  Unknown reference.
+
+    src/app/pages/landing/landing.component.ts:22:4:
+[37m      22 │     [32mPricingComponent[37m,
+         ╵     [32m~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'PricingComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing.component.ts:22:4:
+[37m      22 │     [32mPricingComponent[37m,
+         ╵     [32m~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.137 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-pricing' is not a known element:
+1. If 'app-pricing' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-pricing' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing.component.ts:77:6:
+[37m      77 │       [32m<app-pricing>[37m</app-pricing>
+         ╵       [32m~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                      |  Raw size
+styles.css           | styles                     |  69.34 kB | 
+main.js              | main                       |   4.06 kB | 
+chunk-YQOESBWP.js    | -                          | 754 bytes | 
+
+                     | Initial total              |  74.16 kB
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-JROWRH3F.js    | landing-component          | 126.98 kB | 
+chunk-JHPKNFU3.js    | fiyatlandirma-component    |  69.97 kB | 
+chunk-ZPUOU2G7.js    | ozellik-detay-component    |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component             |  26.98 kB | 
+chunk-PFGBOMF2.js    | -                          |  18.20 kB | 
+chunk-3B3BEQUL.js    | -                          |  16.20 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component          |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                      |  Raw size
+main.server.mjs      | main.server                |   5.31 kB | 
+server.mjs           | server                     |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                          | 788 bytes | 
+polyfills.server.mjs | polyfills.server           | 243 bytes | 
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-KDOEXJJP.mjs   | landing-component          | 127.02 kB | 
+chunk-7ZSQQ2HV.mjs   | fiyatlandirma-component    |  70.00 kB | 
+chunk-AEGWGTSI.mjs   | ozellik-detay-component    |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component             |  27.02 kB | 
+chunk-Q3O4GMS6.mjs   | -                          |  18.24 kB | 
+chunk-MXP6BR7U.mjs   | -                          |  16.23 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component          |   9.64 kB | 
+
+Application bundle generation complete. [0.249 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                   |  Raw size
+main.js             | main                    |   4.06 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-JYD2IZPZ.js   | landing-component       | 126.98 kB | 
+chunk-6UG2U7EL.js   | fiyatlandirma-component |  69.97 kB | 
+chunk-IGDPUJI7.js   | ozellik-detay-component |  32.50 kB | 
+chunk-AD2DUHZX.js   | -                       |  18.20 kB | 
+chunk-46CSSOTT.js   | -                       |  16.20 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                   |  Raw size
+main.server.mjs     | main.server             |   5.31 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-L5LR2ATU.mjs  | landing-component       | 127.02 kB | 
+chunk-XZIJ4VIW.mjs  | fiyatlandirma-component |  70.00 kB | 
+chunk-AMYQBU2P.mjs  | ozellik-detay-component |  32.54 kB | 
+chunk-XMETZ3KF.mjs  | -                       |  18.24 kB | 
+chunk-BXXBOMKR.mjs  | -                       |  16.24 kB | 
+
+Application bundle generation complete. [0.157 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                   |  Raw size
+main.js             | main                    |   4.06 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-A6TIIIWJ.js   | landing-component       | 126.98 kB | 
+chunk-N777PSAS.js   | fiyatlandirma-component |  69.97 kB | 
+chunk-SBOPIIR5.js   | -                       |  18.20 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                   |  Raw size
+main.server.mjs     | main.server             |   5.31 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-AWVI6SLQ.mjs  | landing-component       | 127.02 kB | 
+chunk-HGCD2OUC.mjs  | fiyatlandirma-component |  70.00 kB | 
+chunk-CCKHIE4S.mjs  | -                       |  18.24 kB | 
+
+Application bundle generation complete. [0.308 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                   |  Raw size
+main.js             | main                    |   4.06 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-N63FAGOX.js   | landing-component       | 126.98 kB | 
+chunk-OXCHJY72.js   | fiyatlandirma-component |  69.97 kB | 
+chunk-YG2LDD46.js   | -                       |  18.24 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                   |  Raw size
+main.server.mjs     | main.server             |   5.31 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-EBWAS4P3.mjs  | landing-component       | 127.02 kB | 
+chunk-3O5YZXUE.mjs  | fiyatlandirma-component |  70.00 kB | 
+chunk-743FEZ4U.mjs  | -                       |  18.27 kB | 
+
+Application bundle generation complete. [0.284 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                   |  Raw size
+main.js             | main                    |   4.06 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-DR46K6JC.js   | landing-component       | 126.98 kB | 
+chunk-JSLOG4OB.js   | fiyatlandirma-component |  69.97 kB | 
+chunk-642YJ4ML.js   | -                       |  18.31 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                   |  Raw size
+main.server.mjs     | main.server             |   5.31 kB | 
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-3LB2XMOZ.mjs  | landing-component       | 127.02 kB | 
+chunk-57PZCYGO.mjs  | fiyatlandirma-component |  70.00 kB | 
+chunk-L6WRQLYT.mjs  | -                       |  18.35 kB | 
+
+Application bundle generation complete. [0.326 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                      |  Raw size
+styles.css           | styles                     |  69.34 kB | 
+main.js              | main                       |   4.06 kB | 
+chunk-YQOESBWP.js    | -                          | 754 bytes | 
+
+                     | Initial total              |  74.16 kB
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-DR46K6JC.js    | landing-component          | 126.98 kB | 
+chunk-JSLOG4OB.js    | fiyatlandirma-component    |  69.97 kB | 
+chunk-IGDPUJI7.js    | ozellik-detay-component    |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component             |  26.98 kB | 
+chunk-642YJ4ML.js    | -                          |  18.31 kB | 
+chunk-46CSSOTT.js    | -                          |  16.20 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component          |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                      |  Raw size
+main.server.mjs      | main.server                |   5.31 kB | 
+server.mjs           | server                     |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                          | 788 bytes | 
+polyfills.server.mjs | polyfills.server           | 243 bytes | 
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-3LB2XMOZ.mjs   | landing-component          | 127.02 kB | 
+chunk-57PZCYGO.mjs   | fiyatlandirma-component    |  70.00 kB | 
+chunk-AMYQBU2P.mjs   | ozellik-detay-component    |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component             |  27.02 kB | 
+chunk-L6WRQLYT.mjs   | -                          |  18.35 kB | 
+chunk-BXXBOMKR.mjs   | -                          |  16.24 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component          |   9.64 kB | 
+
+Application bundle generation complete. [0.465 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                      |  Raw size
+styles.css           | styles                     |  69.34 kB | 
+main.js              | main                       |   4.06 kB | 
+chunk-YQOESBWP.js    | -                          | 754 bytes | 
+
+                     | Initial total              |  74.16 kB
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-DR46K6JC.js    | landing-component          | 126.98 kB | 
+chunk-JSLOG4OB.js    | fiyatlandirma-component    |  69.97 kB | 
+chunk-IGDPUJI7.js    | ozellik-detay-component    |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component             |  26.98 kB | 
+chunk-642YJ4ML.js    | -                          |  18.31 kB | 
+chunk-46CSSOTT.js    | -                          |  16.20 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component          |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                      |  Raw size
+main.server.mjs      | main.server                |   5.31 kB | 
+server.mjs           | server                     |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                          | 788 bytes | 
+polyfills.server.mjs | polyfills.server           | 243 bytes | 
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-3LB2XMOZ.mjs   | landing-component          | 127.02 kB | 
+chunk-57PZCYGO.mjs   | fiyatlandirma-component    |  70.00 kB | 
+chunk-AMYQBU2P.mjs   | ozellik-detay-component    |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component             |  27.02 kB | 
+chunk-L6WRQLYT.mjs   | -                          |  18.35 kB | 
+chunk-BXXBOMKR.mjs   | -                          |  16.24 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component          |   9.64 kB | 
+
+Application bundle generation complete. [0.193 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                      |  Raw size
+styles.css           | styles                     |  69.34 kB | 
+main.js              | main                       |   4.06 kB | 
+chunk-YQOESBWP.js    | -                          | 754 bytes | 
+
+                     | Initial total              |  74.16 kB
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-DR46K6JC.js    | landing-component          | 126.98 kB | 
+chunk-JSLOG4OB.js    | fiyatlandirma-component    |  69.97 kB | 
+chunk-IGDPUJI7.js    | ozellik-detay-component    |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component             |  26.98 kB | 
+chunk-642YJ4ML.js    | -                          |  18.31 kB | 
+chunk-46CSSOTT.js    | -                          |  16.20 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component          |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                      |  Raw size
+main.server.mjs      | main.server                |   5.31 kB | 
+server.mjs           | server                     |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                          | 788 bytes | 
+polyfills.server.mjs | polyfills.server           | 243 bytes | 
+
+Lazy chunk files     | Names                      |  Raw size
+chunk-3LB2XMOZ.mjs   | landing-component          | 127.02 kB | 
+chunk-57PZCYGO.mjs   | fiyatlandirma-component    |  70.00 kB | 
+chunk-AMYQBU2P.mjs   | ozellik-detay-component    |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component             |  27.02 kB | 
+chunk-L6WRQLYT.mjs   | -                          |  18.35 kB | 
+chunk-BXXBOMKR.mjs   | -                          |  16.24 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component          |   9.64 kB | 
+
+Application bundle generation complete. [0.191 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.706 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:359:17:
+[37m      359 │   activeFilter = [32msignal[37m<string>('all');
+          ╵                  [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:524:20:
+[37m      524 │   filteredModules = [32msignal[37m<Module[]>(this.modules);
+          ╵                     [32m~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.254 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:359:17:
+[37m      359 │   activeFilter = [32msignal[37m<string>('all');
+          ╵                  [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:524:20:
+[37m      524 │   filteredModules = [32msignal[37m<Module[]>(this.modules);
+          ╵                     [32m~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.314 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'navigateHome' does not exist on type 'NavbarComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/navbar/navbar.component.ts:22:75:
+[37m      22 │ ...x items-center space-x-3 cursor-pointer" (click)="[32mnavigateHome[37m()">
+         ╵                                                      [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:359:17:
+[37m      359 │   activeFilter = [32msignal[37m<string>('all');
+          ╵                  [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:524:20:
+[37m      524 │   filteredModules = [32msignal[37m<Module[]>(this.modules);
+          ╵                     [32m~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.328 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:359:17:
+[37m      359 │   activeFilter = [32msignal[37m<string>('all');
+          ╵                  [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:524:20:
+[37m      524 │   filteredModules = [32msignal[37m<Module[]>(this.modules);
+          ╵                     [32m~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.275 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:359:17:
+[37m      359 │   activeFilter = [32msignal[37m<string>('all');
+          ╵                  [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:524:20:
+[37m      524 │   filteredModules = [32msignal[37m<Module[]>(this.modules);
+          ╵                     [32m~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.347 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:359:17:
+[37m      359 │   activeFilter = [32msignal[37m<string>('all');
+          ╵                  [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:524:20:
+[37m      524 │   filteredModules = [32msignal[37m<Module[]>(this.modules);
+          ╵                     [32m~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.234 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:359:17:
+[37m      359 │   activeFilter = [32msignal[37m<string>('all');
+          ╵                  [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'signal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/moduller/moduller.component.ts:524:20:
+[37m      524 │   filteredModules = [32msignal[37m<Module[]>(this.modules);
+          ╵                     [32m~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                       |  Raw size
+styles.css           | styles                      |  75.23 kB | 
+main.js              | main                        |   4.76 kB | 
+chunk-YQOESBWP.js    | -                           | 754 bytes | 
+
+                     | Initial total               |  80.74 kB
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-5AYYF3IH.js    | landing-component           |  83.33 kB | 
+chunk-7WPIYIML.js    | fiyatlandirma-component     |  69.97 kB | 
+chunk-7EKNKQI7.js    | moduller-component          |  56.91 kB | 
+chunk-4IUOVJX2.js    | ekran-goruntuleri-component |  46.91 kB | 
+chunk-WD3EKEWA.js    | ozellikler-component        |  33.55 kB | 
+chunk-STTOA45F.js    | ozellik-detay-component     |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component              |  26.98 kB | 
+chunk-HDEFQTGY.js    | -                           |  21.89 kB | 
+chunk-25DP3SOZ.js    | -                           |  21.88 kB | 
+chunk-ZP3UEQPX.js    | -                           |  18.81 kB | 
+chunk-GQ6YFPWE.js    | -                           |  16.21 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component  |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component           |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                       |  Raw size
+main.server.mjs      | main.server                 |   6.00 kB | 
+server.mjs           | server                      |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
+polyfills.server.mjs | polyfills.server            | 243 bytes | 
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-537SVEEG.mjs   | landing-component           |  83.37 kB | 
+chunk-GRDO4LX4.mjs   | fiyatlandirma-component     |  70.00 kB | 
+chunk-QZEDT3YP.mjs   | moduller-component          |  56.95 kB | 
+chunk-DPTLD622.mjs   | ekran-goruntuleri-component |  46.94 kB | 
+chunk-KCUV2RUE.mjs   | ozellikler-component        |  33.59 kB | 
+chunk-MYQHGEYY.mjs   | ozellik-detay-component     |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component              |  27.02 kB | 
+chunk-FT4K2ATU.mjs   | -                           |  21.93 kB | 
+chunk-7DICMNU6.mjs   | -                           |  21.92 kB | 
+chunk-S4XWIE3O.mjs   | -                           |  18.84 kB | 
+chunk-O5VNZ5DP.mjs   | -                           |  16.25 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component  |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component           |   9.64 kB | 
+
+Application bundle generation complete. [0.389 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                       |  Raw size
+styles.css           | styles                      |  75.23 kB | 
+main.js              | main                        |   4.76 kB | 
+chunk-YQOESBWP.js    | -                           | 754 bytes | 
+
+                     | Initial total               |  80.74 kB
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-5AYYF3IH.js    | landing-component           |  83.33 kB | 
+chunk-7WPIYIML.js    | fiyatlandirma-component     |  69.97 kB | 
+chunk-7EKNKQI7.js    | moduller-component          |  56.91 kB | 
+chunk-4IUOVJX2.js    | ekran-goruntuleri-component |  46.91 kB | 
+chunk-WD3EKEWA.js    | ozellikler-component        |  33.55 kB | 
+chunk-STTOA45F.js    | ozellik-detay-component     |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component              |  26.98 kB | 
+chunk-HDEFQTGY.js    | -                           |  21.89 kB | 
+chunk-25DP3SOZ.js    | -                           |  21.88 kB | 
+chunk-ZP3UEQPX.js    | -                           |  18.81 kB | 
+chunk-GQ6YFPWE.js    | -                           |  16.21 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component  |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component           |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                       |  Raw size
+main.server.mjs      | main.server                 |   6.00 kB | 
+server.mjs           | server                      |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
+polyfills.server.mjs | polyfills.server            | 243 bytes | 
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-537SVEEG.mjs   | landing-component           |  83.37 kB | 
+chunk-GRDO4LX4.mjs   | fiyatlandirma-component     |  70.00 kB | 
+chunk-QZEDT3YP.mjs   | moduller-component          |  56.95 kB | 
+chunk-DPTLD622.mjs   | ekran-goruntuleri-component |  46.94 kB | 
+chunk-KCUV2RUE.mjs   | ozellikler-component        |  33.59 kB | 
+chunk-MYQHGEYY.mjs   | ozellik-detay-component     |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component              |  27.02 kB | 
+chunk-FT4K2ATU.mjs   | -                           |  21.93 kB | 
+chunk-7DICMNU6.mjs   | -                           |  21.92 kB | 
+chunk-S4XWIE3O.mjs   | -                           |  18.84 kB | 
+chunk-O5VNZ5DP.mjs   | -                           |  16.25 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component  |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component           |   9.64 kB | 
+
+Application bundle generation complete. [0.290 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Sun Sep  7 14:51:09 +03 2025: Script started
+Sun Sep  7 14:51:09 +03 2025: Starting server (attempt 1)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names                       |  Raw size
+styles.css           | styles                      |  75.23 kB | 
+main.js              | main                        |   4.76 kB | 
+chunk-YQOESBWP.js    | -                           | 754 bytes | 
+
+                     | Initial total               |  80.74 kB
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-5AYYF3IH.js    | landing-component           |  83.33 kB | 
+chunk-7WPIYIML.js    | fiyatlandirma-component     |  69.97 kB | 
+chunk-7EKNKQI7.js    | moduller-component          |  56.91 kB | 
+chunk-4IUOVJX2.js    | ekran-goruntuleri-component |  46.91 kB | 
+chunk-WD3EKEWA.js    | ozellikler-component        |  33.55 kB | 
+chunk-STTOA45F.js    | ozellik-detay-component     |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component              |  26.98 kB | 
+chunk-HDEFQTGY.js    | -                           |  21.89 kB | 
+chunk-25DP3SOZ.js    | -                           |  21.88 kB | 
+chunk-ZP3UEQPX.js    | -                           |  18.81 kB | 
+chunk-GQ6YFPWE.js    | -                           |  16.21 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component  |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component           |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                       |  Raw size
+main.server.mjs      | main.server                 |   6.00 kB | 
+server.mjs           | server                      |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
+polyfills.server.mjs | polyfills.server            | 243 bytes | 
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-537SVEEG.mjs   | landing-component           |  83.37 kB | 
+chunk-GRDO4LX4.mjs   | fiyatlandirma-component     |  70.00 kB | 
+chunk-QZEDT3YP.mjs   | moduller-component          |  56.95 kB | 
+chunk-DPTLD622.mjs   | ekran-goruntuleri-component |  46.94 kB | 
+chunk-KCUV2RUE.mjs   | ozellikler-component        |  33.59 kB | 
+chunk-MYQHGEYY.mjs   | ozellik-detay-component     |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component              |  27.02 kB | 
+chunk-FT4K2ATU.mjs   | -                           |  21.93 kB | 
+chunk-7DICMNU6.mjs   | -                           |  21.92 kB | 
+chunk-S4XWIE3O.mjs   | -                           |  18.84 kB | 
+chunk-O5VNZ5DP.mjs   | -                           |  16.25 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component  |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component           |   9.64 kB | 
+
+Application bundle generation complete. [2.463 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://172.20.10.4:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.512 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        |  4.84 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server |  6.09 kB | 
+
+Application bundle generation complete. [0.190 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        |  5.25 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server |  6.50 kB | 
+
+Application bundle generation complete. [0.289 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+2:54:44 PM [vite] (ssr) ✨ new dependencies optimized: rxjs/operators
+2:54:44 PM [vite] (ssr) ✨ optimized dependencies changed. reloading
+Page reload sent to client(s).
+2:54:47 PM [vite] (client) ✨ new dependencies optimized: rxjs/operators
+2:54:47 PM [vite] (client) ✨ optimized dependencies changed. reloading
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                       | Raw size
+main.js             | main                        |  5.25 kB | 
+
+Lazy chunk files    | Names                       | Raw size
+chunk-G6NGOIFZ.js   | landing-component           | 83.33 kB | 
+chunk-JXNYZMWZ.js   | fiyatlandirma-component     | 69.97 kB | 
+chunk-Y2CYXLQP.js   | moduller-component          | 56.91 kB | 
+chunk-JYVQYSIR.js   | ekran-goruntuleri-component | 46.91 kB | 
+chunk-QNTSWL6G.js   | ozellikler-component        | 33.55 kB | 
+chunk-UAUKTXB4.js   | -                           | 19.35 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                       | Raw size
+main.server.mjs     | main.server                 |  6.50 kB | 
+
+Lazy chunk files    | Names                       | Raw size
+chunk-7JKANLI4.mjs  | landing-component           | 83.37 kB | 
+chunk-74E3ZE3C.mjs  | fiyatlandirma-component     | 70.00 kB | 
+chunk-Z3UWBJQ6.mjs  | moduller-component          | 56.95 kB | 
+chunk-JH2UHSJ6.mjs  | ekran-goruntuleri-component | 46.94 kB | 
+chunk-DCQATHHB.mjs  | ozellikler-component        | 33.59 kB | 
+chunk-2II6EJMP.mjs  | -                           | 19.39 kB | 
+
+Application bundle generation complete. [0.491 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                       |  Raw size
+styles.css           | styles                      |  75.23 kB | 
+main.js              | main                        |   5.25 kB | 
+chunk-YQOESBWP.js    | -                           | 754 bytes | 
+
+                     | Initial total               |  81.23 kB
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-G6NGOIFZ.js    | landing-component           |  83.33 kB | 
+chunk-JXNYZMWZ.js    | fiyatlandirma-component     |  69.97 kB | 
+chunk-Y2CYXLQP.js    | moduller-component          |  56.91 kB | 
+chunk-JYVQYSIR.js    | ekran-goruntuleri-component |  46.91 kB | 
+chunk-QNTSWL6G.js    | ozellikler-component        |  33.55 kB | 
+chunk-STTOA45F.js    | ozellik-detay-component     |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component              |  26.98 kB | 
+chunk-HDEFQTGY.js    | -                           |  21.89 kB | 
+chunk-25DP3SOZ.js    | -                           |  21.88 kB | 
+chunk-UAUKTXB4.js    | -                           |  19.35 kB | 
+chunk-GQ6YFPWE.js    | -                           |  16.21 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component  |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component           |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                       |  Raw size
+main.server.mjs      | main.server                 |   6.50 kB | 
+server.mjs           | server                      |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
+polyfills.server.mjs | polyfills.server            | 243 bytes | 
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-7JKANLI4.mjs   | landing-component           |  83.37 kB | 
+chunk-74E3ZE3C.mjs   | fiyatlandirma-component     |  70.00 kB | 
+chunk-Z3UWBJQ6.mjs   | moduller-component          |  56.95 kB | 
+chunk-JH2UHSJ6.mjs   | ekran-goruntuleri-component |  46.94 kB | 
+chunk-DCQATHHB.mjs   | ozellikler-component        |  33.59 kB | 
+chunk-MYQHGEYY.mjs   | ozellik-detay-component     |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component              |  27.02 kB | 
+chunk-FT4K2ATU.mjs   | -                           |  21.93 kB | 
+chunk-7DICMNU6.mjs   | -                           |  21.92 kB | 
+chunk-2II6EJMP.mjs   | -                           |  19.39 kB | 
+chunk-O5VNZ5DP.mjs   | -                           |  16.25 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component  |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component           |   9.64 kB | 
+
+Application bundle generation complete. [0.534 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.440 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG1010: 'imports' must be an array of components, directives, pipes, or NgModules.
+  Value could not be determined statically.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing.component.ts:18:4:
+[37m      18 │     [32mFeaturesComponent[37m,
+         ╵     [32m~~~~~~~~~~~~~~~~~[0m
+
+  Unknown reference.
+
+    src/app/pages/landing/landing.component.ts:18:4:
+[37m      18 │     [32mFeaturesComponent[37m,
+         ╵     [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'FeaturesComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing.component.ts:18:4:
+[37m      18 │     [32mFeaturesComponent[37m,
+         ╵     [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG1010: 'imports' must be an array of components, directives, pipes, or NgModules.
+  Value could not be determined statically.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing.component.ts:19:4:
+[37m      19 │     [32mScreenshotsComponent[37m,
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+  Unknown reference.
+
+    src/app/pages/landing/landing.component.ts:19:4:
+[37m      19 │     [32mScreenshotsComponent[37m,
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ScreenshotsComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing.component.ts:19:4:
+[37m      19 │     [32mScreenshotsComponent[37m,
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.168 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-features' is not a known element:
+1. If 'app-features' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-features' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing.component.ts:31:6:
+[37m      31 │       [32m<app-features>[37m</app-features>
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-screenshots' is not a known element:
+1. If 'app-screenshots' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-screenshots' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing.component.ts:52:6:
+[37m      52 │       [32m<app-screenshots>[37m</app-screenshots>
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.858 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./pages/landing/landing.component"[0m
+
+    src/app/app.routes.ts:4:36:
+[37m      4 │ ...: () => import([32m'./pages/landing/landing.component'[37m).then((m) => ...
+        ╵                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module './pages/landing/landing.component' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.routes.ts:7:13:
+[37m      7 │       import([32m'./pages/landing/landing.component'[37m).then(
+        ╵              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-features' is not a known element:
+1. If 'app-features' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-features' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:31:6:
+[37m      31 │       [32m<app-features>[37m</app-features>
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-screenshots' is not a known element:
+1. If 'app-screenshots' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-screenshots' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:52:6:
+[37m      52 │       [32m<app-screenshots>[37m</app-screenshots>
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./pages/landing/landing.component"[0m
+
+    src/app/app.routes.ts:4:36:
+[37m      4 │ ...: () => import([32m'./pages/landing/landing.component'[37m).then((m) => ...
+        ╵                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.452 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-features' is not a known element:
+1. If 'app-features' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-features' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:31:6:
+[37m      31 │       [32m<app-features>[37m</app-features>
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-screenshots' is not a known element:
+1. If 'app-screenshots' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-screenshots' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:52:6:
+[37m      52 │       [32m<app-screenshots>[37m</app-screenshots>
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Sun Sep  7 15:06:31 +03 2025: Script started
+Sun Sep  7 15:06:32 +03 2025: Starting server (attempt 1)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [2.363 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-features' is not a known element:
+1. If 'app-features' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-features' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:31:6:
+[37m      31 │       [32m<app-features>[37m</app-features>
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-screenshots' is not a known element:
+1. If 'app-screenshots' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-screenshots' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:52:6:
+[37m      52 │       [32m<app-screenshots>[37m</app-screenshots>
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+Sun Sep  7 15:07:41 +03 2025: Starting server (attempt 2)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [2.220 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-features' is not a known element:
+1. If 'app-features' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-features' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:31:6:
+[37m      31 │       [32m<app-features>[37m</app-features>
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-screenshots' is not a known element:
+1. If 'app-screenshots' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-screenshots' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:52:6:
+[37m      52 │       [32m<app-screenshots>[37m</app-screenshots>
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+Sun Sep  7 15:08:49 +03 2025: Starting server (attempt 3)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [2.205 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-features' is not a known element:
+1. If 'app-features' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-features' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:31:6:
+[37m      31 │       [32m<app-features>[37m</app-features>
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-screenshots' is not a known element:
+1. If 'app-screenshots' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-screenshots' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:52:6:
+[37m      52 │       [32m<app-screenshots>[37m</app-screenshots>
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+Sun Sep  7 15:09:58 +03 2025: Starting server (attempt 4)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [2.171 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-features' is not a known element:
+1. If 'app-features' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-features' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:31:6:
+[37m      31 │       [32m<app-features>[37m</app-features>
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-screenshots' is not a known element:
+1. If 'app-screenshots' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-screenshots' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:52:6:
+[37m      52 │       [32m<app-screenshots>[37m</app-screenshots>
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+Sun Sep  7 15:11:07 +03 2025: Starting server (attempt 5)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [2.137 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-features' is not a known element:
+1. If 'app-features' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-features' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:31:6:
+[37m      31 │       [32m<app-features>[37m</app-features>
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-screenshots' is not a known element:
+1. If 'app-screenshots' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-screenshots' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:52:6:
+[37m      52 │       [32m<app-screenshots>[37m</app-screenshots>
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+Sun Sep  7 15:17:14 +03 2025: Script started
+Sun Sep  7 15:17:14 +03 2025: Starting server (attempt 1)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [2.270 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-features' is not a known element:
+1. If 'app-features' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-features' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:31:6:
+[37m      31 │       [32m<app-features>[37m</app-features>
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-screenshots' is not a known element:
+1. If 'app-screenshots' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-screenshots' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:52:6:
+[37m      52 │       [32m<app-screenshots>[37m</app-screenshots>
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+Sun Sep  7 15:18:23 +03 2025: Starting server (attempt 2)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [2.198 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-features' is not a known element:
+1. If 'app-features' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-features' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:31:6:
+[37m      31 │       [32m<app-features>[37m</app-features>
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-screenshots' is not a known element:
+1. If 'app-screenshots' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-screenshots' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:52:6:
+[37m      52 │       [32m<app-screenshots>[37m</app-screenshots>
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+Sun Sep  7 15:19:34 +03 2025: Starting server (attempt 3)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [2.400 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-features' is not a known element:
+1. If 'app-features' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-features' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:31:6:
+[37m      31 │       [32m<app-features>[37m</app-features>
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-screenshots' is not a known element:
+1. If 'app-screenshots' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-screenshots' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/landing/landing-old.component.ts:52:6:
+[37m      52 │       [32m<app-screenshots>[37m</app-screenshots>
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+Sun Sep  7 15:20:43 +03 2025: Starting server (attempt 4)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+Sun Sep  7 15:29:50 +03 2025: Script started
+Sun Sep  7 15:29:50 +03 2025: Starting server (attempt 1)
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names                       |  Raw size
+styles.css           | styles                      |  75.36 kB | 
+main.js              | main                        |   5.25 kB | 
+chunk-YQOESBWP.js    | -                           | 754 bytes | 
+
+                     | Initial total               |  81.37 kB
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-PMVZVRTO.js    | landing-component           | 119.56 kB | 
+chunk-JXNYZMWZ.js    | fiyatlandirma-component     |  69.97 kB | 
+chunk-XZ77BT6G.js    | ekran-goruntuleri-component |  68.97 kB | 
+chunk-Y2CYXLQP.js    | moduller-component          |  56.91 kB | 
+chunk-RLNF5LEP.js    | ozellikler-component        |  55.53 kB | 
+chunk-STTOA45F.js    | ozellik-detay-component     |  32.50 kB | 
+chunk-E3FM7O7H.js    | kvkk-component              |  26.98 kB | 
+chunk-UAUKTXB4.js    | -                           |  19.35 kB | 
+chunk-GQ6YFPWE.js    | -                           |  16.21 kB | 
+chunk-TXOEKBFQ.js    | cerez-politikasi-component  |  10.19 kB | 
+chunk-E2KGAQIU.js    | sartlar-component           |   9.60 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                       |  Raw size
+main.server.mjs      | main.server                 |   6.50 kB | 
+server.mjs           | server                      |   1.79 kB | 
+chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
+polyfills.server.mjs | polyfills.server            | 243 bytes | 
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-CGMUKTM7.mjs   | landing-component           | 119.60 kB | 
+chunk-74E3ZE3C.mjs   | fiyatlandirma-component     |  70.00 kB | 
+chunk-RMIMVICT.mjs   | ekran-goruntuleri-component |  69.01 kB | 
+chunk-Z3UWBJQ6.mjs   | moduller-component          |  56.95 kB | 
+chunk-VI2ZOLOY.mjs   | ozellikler-component        |  55.57 kB | 
+chunk-MYQHGEYY.mjs   | ozellik-detay-component     |  32.54 kB | 
+chunk-7V3ZRDSW.mjs   | kvkk-component              |  27.02 kB | 
+chunk-2II6EJMP.mjs   | -                           |  19.39 kB | 
+chunk-O5VNZ5DP.mjs   | -                           |  16.25 kB | 
+chunk-PLV3MNAE.mjs   | cerez-politikasi-component  |  10.22 kB | 
+chunk-A5PNGLT4.mjs   | sartlar-component           |   9.64 kB | 
+
+Application bundle generation complete. [2.520 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://172.20.10.4:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+styles.css          | styles            |  75.40 kB | 
+main.js             | main              |   3.59 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-YMULS6XP.js   | landing-component | 154.99 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+main.server.mjs     | main.server       |   4.84 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-UYXFNJR2.mjs  | landing-component | 155.03 kB | 
+
+Application bundle generation complete. [0.788 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              |   3.59 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-KAOSHRMK.js   | landing-component | 145.09 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+main.server.mjs     | main.server       |   4.84 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-XDJMCXR4.mjs  | landing-component | 145.12 kB | 
+
+Application bundle generation complete. [0.502 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:1:8:
+[37m      1 │ @import [32m[37m'tailwindcss/base';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m'tailwindcss/components';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:3:8:
+[37m      3 │ @import [32m[37m'tailwindcss/utilities';
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
