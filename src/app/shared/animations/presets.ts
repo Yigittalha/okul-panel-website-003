@@ -12,7 +12,6 @@ import {
   query,
   stagger,
   group,
-  animateChild,
 } from '@angular/animations';
 import { ANIMATION_DURATION, ANIMATION_EASING, ANIMATION_DISTANCE } from './tokens';
 

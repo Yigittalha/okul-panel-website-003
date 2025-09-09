@@ -1,11 +1,10 @@
 import { Component, OnInit, inject, signal, computed, effect, PLATFORM_ID } from '@angular/core';
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 
-import { PricingService, PricingCalculation } from '../../services/pricing.service';
-import { Counter } from '../../shared/utils/counter';
+import { PricingService } from '../../services/pricing.service';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation } from '../../animations/page-animations';
 

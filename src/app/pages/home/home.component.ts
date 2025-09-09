@@ -9,7 +9,7 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { HeroComponent } from '../../components/hero/hero.component';
 
 // Services
-import { PricingService, PricingCalculation } from '../../services/pricing.service';
+import { PricingService } from '../../services/pricing.service';
 
 
 // Animations

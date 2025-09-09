@@ -47,7 +47,7 @@ export class PricingService {
     };
   }
 
-  getBasicCalculation(studentCount: number, isAnnual: boolean = true, schoolType: 'private' | 'public' = 'private'): PricingCalculation {
+  getBasicCalculation(studentCount: number, isAnnual = true, schoolType: 'private' | 'public' = 'private'): PricingCalculation {
     // Devlet okulu için özel fiyatlandırma
     if (schoolType === 'public') {
       return {

@@ -4,7 +4,6 @@ import {
   Module,
   Screenshot,
   Testimonial,
-  PricingPlan,
   FAQ,
   TrustBadge,
   NavigationItem,
