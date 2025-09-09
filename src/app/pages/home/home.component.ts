@@ -46,20 +46,23 @@ import { Counter } from '../../shared/utils/counter';
               <!-- LEFT: Copy -->
               <div class="space-y-8">
                 <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6 animate-fade-in-up hero-title-glow" style="animation-delay: 0.1s">
-                  Okul Panel Nedir?
+                  <span class="text-accent-500">Okul Panel</span> Nedir?
                 </h2>
-                <p class="text-xl text-blue-100 leading-relaxed animate-fade-in-up hero-text-glow" style="animation-delay: 0.2s">
-                  OkulApp; yoklama, not &amp; sınav yönetimi, bildirimler, program &amp; ders ve raporlamayı 
-                  tek yerde toplayan web + mobil bir okul yönetim platformudur.
-                </p>
                 
+                <!-- Açıklama Paragrafı -->
+                <p class="text-xl text-blue-100 leading-relaxed animate-fade-in-up hero-text-glow" style="animation-delay: 0.2s">
+                  Okul Panel, okul yönetim süreçlerini dijitalleştiren kapsamlı bir okul yönetim platformudur. 
+                  Hem web hem de mobil uygulama üzerinden erişilebilen sistem; öğretmenler, öğrenciler ve 
+                  veliler arasındaki iletişimi güçlendirir, akademik süreçleri kolayca takip etmenizi sağlar.
+                </p>
+
                 <!-- Badges -->
                 <div class="flex flex-wrap gap-3 animate-fade-in-up" aria-hidden="true" style="animation-delay: 0.3s">
                   <span class="px-4 py-2 bg-white/20 text-white border border-white/30 rounded-full text-sm font-medium hero-badge" style="animation-delay: 0.4s">
                     Öğrenci • Öğretmen • Veli
                   </span>
                   <span class="px-4 py-2 bg-white/20 text-white border border-white/30 rounded-full text-sm font-medium hero-badge" style="animation-delay: 0.5s">
-                    Web + Mobil
+                    Mobil
                   </span>
                   <span class="px-4 py-2 bg-white/20 text-white border border-white/30 rounded-full text-sm font-medium hero-badge" style="animation-delay: 0.6s">
                     Dark Mode Desteği
@@ -72,42 +75,60 @@ import { Counter } from '../../shared/utils/counter';
                     <svg class="w-6 h-6 text-accent-400 mt-1 flex-shrink-0 hero-feature-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <span>Akıllı Ders Programı &amp; Yoklama Sistemi</span>
+                    <span>Öğrenci – Öğretmen – Veli Modülleri</span>
                   </li>
                   <li class="flex items-start space-x-3 hero-feature-item" style="animation-delay: 0.9s">
                     <svg class="w-6 h-6 text-accent-400 mt-1 flex-shrink-0 hero-feature-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <span>Not &amp; sınav kayıtları, görevler</span>
+                    <span>Mobil Kullanım</span>
                   </li>
                   <li class="flex items-start space-x-3 hero-feature-item" style="animation-delay: 1.0s">
                     <svg class="w-6 h-6 text-accent-400 mt-1 flex-shrink-0 hero-feature-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <span>Anlık Senkronizasyon &amp; bildirimler</span>
+                    <span>Dark Mode Desteği</span>
                   </li>
                   <li class="flex items-start space-x-3 hero-feature-item" style="animation-delay: 1.1s">
                     <svg class="w-6 h-6 text-accent-400 mt-1 flex-shrink-0 hero-feature-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <span>Raporlama &amp; özet panelleri</span>
+                    <span>Akıllı Ders Programı &amp; Yoklama</span>
+                  </li>
+                  <li class="flex items-start space-x-3 hero-feature-item" style="animation-delay: 1.2s">
+                    <svg class="w-6 h-6 text-accent-400 mt-1 flex-shrink-0 hero-feature-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Not &amp; Sınav Yönetimi, Ödevler</span>
+                  </li>
+                  <li class="flex items-start space-x-3 hero-feature-item" style="animation-delay: 1.3s">
+                    <svg class="w-6 h-6 text-accent-400 mt-1 flex-shrink-0 hero-feature-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Anlık Senkronizasyon &amp; Bildirimler</span>
                   </li>
                 </ul>
 
+                <!-- Kapanış Paragrafı -->
+                <p class="text-lg text-blue-100 leading-relaxed animate-fade-in-up" style="animation-delay: 1.2s">
+                  Tüm bu özellikler, modern bir okul yönetim sistemi olan <span class="text-accent-400 font-semibold">Okul Panel</span> 
+                  ile okulunuzun dijital dönüşümünü kolaylaştırır.
+                </p>
+
                 <!-- CTAs -->
-                <div class="flex flex-wrap gap-4 animate-fade-in-up" style="animation-delay: 1.2s">
-                  <a routerLink="/about" class="px-8 py-4 bg-white/10 text-white border border-white/30 rounded-2xl font-semibold hover:bg-white/20 hover:scale-105 transition-all duration-300 hero-cta-primary" style="animation-delay: 1.3s">
+                <div class="flex flex-wrap gap-4 animate-fade-in-up" style="animation-delay: 1.3s">
+                  <a routerLink="/about" class="px-8 py-4 bg-white/10 text-white border border-white/30 rounded-2xl font-semibold hover:bg-white/20 hover:scale-105 transition-all duration-300 hero-cta-primary" style="animation-delay: 1.4s">
                     Detaylı Bilgi
                   </a>
-                  <a routerLink="/contact" class="px-8 py-4 bg-accent-500 text-white rounded-2xl font-semibold hover:bg-accent-600 hover:scale-105 transition-all duration-300 shadow-lg hero-cta-secondary" style="animation-delay: 1.4s">
+                  <a routerLink="/contact" class="px-8 py-4 bg-accent-500 text-white rounded-2xl font-semibold hover:bg-accent-600 hover:scale-105 transition-all duration-300 shadow-lg hero-cta-secondary" style="animation-delay: 1.5s">
                     Canlı Demo
                   </a>
                 </div>
               </div>
 
-              <!-- RIGHT: Phone Mocks -->
+              <!-- RIGHT: Device Mocks -->
               <div class="relative max-w-2xl mx-auto lg:max-w-none">
-                <div class="relative flex gap-6 justify-center items-start phone-mocks-container">
+                <div class="relative flex gap-4 justify-center items-start phone-mocks-container">
                   <!-- Phone Mock 1: Ders Programı -->
                   <div class="relative">
                     <svg class="w-full max-w-xs mx-auto phone-float" viewBox="0 0 320 640" role="img" aria-hidden="true">
@@ -283,61 +304,140 @@ import { Counter } from '../../shared/utils/counter';
                       </g>
                     </svg>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-      <!-- Quick Feature Highlights -->
-      <section class="section py-20 bg-gradient-to-br from-blue-50 via-white to-accent-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16" [@fadeInUp]="'visible'">
-            <h2 class="text-3xl lg:text-4xl font-bold text-neutral-900 mb-6">
-              Neden <span class="text-accent-500">Okul Panel</span>?
+      <!-- İstatistik Sayaç Bölümü -->
+      <section class="section py-6 bg-gradient-to-br from-accent-500 via-accent-600 to-accent-700 relative overflow-hidden">
+        <!-- Arka Plan Watermark -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <h1 class="text-[12rem] lg:text-[16rem] font-black text-white/10 select-none tracking-wider watermark-animation">
+            OKUL PANEL
+          </h1>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="text-center mb-4" [@fadeInUp]="'visible'">
+            <h2 class="text-2xl lg:text-3xl font-bold text-white mb-2">
+              <span class="text-yellow-300">İstatistikler</span>
             </h2>
+            <p class="text-sm text-white/90 max-w-xl mx-auto">
+              Binlerce okulun güvendiği, milyonlarca kullanıcının tercih ettiği eğitim yönetim sistemi
+            </p>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8" [@listStagger]="'visible'">
-            <div class="text-center feature-card hover:transform hover:scale-105 transition-all duration-300 p-4 rounded-lg">
-              <div class="w-16 h-16 bg-accent-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg hover:shadow-accent-500/20 transition-all duration-300">
-                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+          <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3" [@listStagger]="'visible'">
+            <!-- Günlük Giriş -->
+            <div class="text-center stats-card group">
+              <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-1 sm:mb-2 backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 15 15" aria-hidden="true">
+                  <path d="M6.554,9.639a.5.5,0,0,0,.707.707L9.928,7.669a.25.25,0,0,0,0-.354h0L7.261,4.639a.5.5,0,0,0-.707.707L8.2,7H1.5a.5.5,0,0,0,0,1H8.2ZM12,1H5.5a.5.5,0,0,0,0,1h6a.5.5,0,0,1,.5.5v10a.5.5,0,0,1-.5.5H5.25a.5.5,0,0,0,0,1H12a1,1,0,0,0,1-1V2A1,1,0,0,0,12,1Z"/>
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-neutral-900 mb-2">Kolay Kullanım</h3>
-              <p class="text-neutral-600">Sezgisel arayüz ile 5 dakikada öğrenin</p>
+              <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white mb-1 counter-number" data-target="222993">
+                0
+              </div>
+              <p class="text-white/90 text-xs font-medium">Günlük Giriş</p>
+              <div class="flex items-center justify-center mt-1">
+                <div class="w-1.5 h-1.5 bg-red-500 rounded-full mr-1"></div>
+                <span class="text-white/70 text-xs">Canlı Veri</span>
+              </div>
             </div>
 
-            <div class="text-center feature-card hover:transform hover:scale-105 transition-all duration-300 p-4 rounded-lg">
-              <div class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg hover:shadow-green-500/20 transition-all duration-300">
-                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+            <!-- Aktif Kullanıcı -->
+            <div class="text-center stats-card group">
+              <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-1 sm:mb-2 backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                  <path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/>
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-neutral-900 mb-2">Güvenli & KVKK Uyumlu</h3>
-              <p class="text-neutral-600">Verileriniz güvende, yasal uyumluluk garantili</p>
+              <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white mb-1 counter-number" data-target="531123">
+                0
+              </div>
+              <p class="text-white/90 text-xs font-medium">Aktif Kullanıcı</p>
+              <div class="flex items-center justify-center mt-1">
+                <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-1"></div>
+                <span class="text-white/70 text-xs">Aktif</span>
+              </div>
             </div>
 
-            <div class="text-center feature-card hover:transform hover:scale-105 transition-all duration-300 p-4 rounded-lg">
-              <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
-                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M17 2H7c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM7 4h10v12H7V4z"/>
+            <!-- Aktif Müdürlük -->
+            <div class="text-center stats-card group">
+              <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-1 sm:mb-2 backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 392.727 392.727" aria-hidden="true">
+                  <rect x="171.055" y="307.2" fill="currentColor" width="50.683" height="63.612"/>
+                  <g>
+                    <rect x="21.915" y="189.737" fill="currentColor" width="60.057" height="181.075"/>
+                    <rect x="310.756" y="189.737" fill="currentColor" width="60.057" height="181.075"/>
+                  </g>
+                  <path fill="currentColor" d="M103.822,370.877h45.446v-74.473c0-6.012,4.848-10.925,10.925-10.925h72.533 c6.012,0,10.925,4.848,10.925,10.925v74.473h45.382v-269.77H103.822V370.877z"/>
+                  <circle fill="currentColor" cx="196.396" cy="191.677" r="50.36"/>
+                  <g>
+                    <path fill="currentColor" d="M196.396,118.885c-40.21,0-72.792,32.582-72.792,72.792s32.582,72.792,72.792,72.792 s72.792-32.582,72.792-72.792S236.606,118.885,196.396,118.885z M196.396,242.036c-27.798,0-50.36-22.562-50.36-50.36 s22.562-50.36,50.36-50.36s50.36,22.562,50.36,50.36S224.194,242.036,196.396,242.036z"/>
+                    <path fill="currentColor" d="M51.976,239.451c6.012,0,10.925-4.848,10.925-10.925v-12.671c0-6.012-4.848-10.925-10.925-10.925 s-10.925,4.848-10.925,10.925v12.671C41.05,234.537,45.964,239.451,51.976,239.451z"/>
+                    <path fill="currentColor" d="M51.976,297.568c6.012,0,10.925-4.849,10.925-10.925v-12.671c0-6.012-4.848-10.925-10.925-10.925 s-10.925,4.848-10.925,10.925v12.671C41.05,292.655,45.964,297.568,51.976,297.568z"/>
+                    <path fill="currentColor" d="M51.976,355.685c6.012,0,10.925-4.849,10.925-10.925v-12.671c0-6.012-4.848-10.925-10.925-10.925 s-10.925,4.848-10.925,10.925v12.671C41.05,350.772,45.964,355.685,51.976,355.685z"/>
+                    <path fill="currentColor" d="M340.816,239.451c6.012,0,10.925-4.848,10.925-10.925v-12.671c0-6.012-4.848-10.925-10.925-10.925 c-6.012,0-10.925,4.848-10.925,10.925v12.671C329.891,234.537,334.804,239.451,340.816,239.451z"/>
+                    <path fill="currentColor" d="M340.816,297.568c6.012,0,10.925-4.849,10.925-10.925v-12.671c0-6.012-4.848-10.925-10.925-10.925 c-6.012,0-10.925,4.848-10.925,10.925v12.671C329.891,292.655,334.804,297.568,340.816,297.568z"/>
+                    <path fill="currentColor" d="M340.816,355.685c6.012,0,10.925-4.849,10.925-10.925v-12.671c0-6.012-4.848-10.925-10.925-10.925 c-6.012,0-10.925,4.848-10.925,10.925v12.671C329.891,350.772,334.804,355.685,340.816,355.685z"/>
+                  </g>
+                  <polygon fill="currentColor" points="295.37,21.915 97.422,21.915 54.626,79.257 338.166,79.257"/>
+                  <g>
+                    <path fill="currentColor" d="M381.802,167.952h-71.046v-66.909h49.131c9.374-0.388,13.834-9.956,8.727-17.455L311.661,7.24 c-3.814-4.655-9.244-6.853-16.097-7.24H97.099c-6.271,0.323-11.895,2.263-16.097,7.24L24.178,83.588 c-5.689,8.857,1.099,17.519,8.727,17.455h49.131v66.909H10.99c-6.012,0-10.925,4.848-10.925,10.925v202.925 c0,6.012,4.848,10.925,10.925,10.925h370.747c6.012,0,10.925-4.848,10.925-10.925V178.877 C392.663,172.8,387.814,167.952,381.802,167.952z M370.877,370.877h-60.121V189.737h60.057v181.139H370.877z M221.737,307.2v63.612 h-50.683V307.2H221.737L221.737,307.2z M288.97,370.877h-45.446v-74.473c0-6.012-4.848-10.925-10.925-10.925h-72.533 c-6.012,0-10.925,4.848-10.925,10.925v74.473h-45.382v-269.77h185.147v269.77H288.97z M54.626,79.257l42.796-57.341H295.37 l42.796,57.341H54.626z M82.036,370.877H21.915V189.737h60.121V370.877z"/>
+                    <path fill="currentColor" d="M177.907,202.602h18.489c6.012,0,10.925-4.848,10.925-10.925v-26.44 c0-6.012-4.848-10.925-10.925-10.925s-10.925,4.848-10.925,10.925v15.515h-7.564c-6.012,0-10.925,4.848-10.925,10.925 C167.046,197.689,171.895,202.602,177.907,202.602z"/>
+                  </g>
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-neutral-900 mb-2">Her Cihazda Erişim</h3>
-              <p class="text-neutral-600">Mobil, tablet, bilgisayar - her yerden kullanın</p>
+              <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white mb-1 counter-number" data-target="1299">
+                0
+              </div>
+              <p class="text-white/90 text-xs font-medium">Aktif Müdürlük</p>
+              <div class="flex items-center justify-center mt-1">
+                <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-1"></div>
+                <span class="text-white/70 text-xs">Kurum</span>
+              </div>
+            </div>
+
+            <!-- Online Kalma Süresi -->
+            <div class="text-center stats-card group">
+              <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-1 sm:mb-2 backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white mb-1 counter-number" data-target="99.95">
+                0
+              </div>
+              <p class="text-white/90 text-xs font-medium">Online Kalma Yüzdesi</p>
+              <div class="flex items-center justify-center mt-1">
+                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-1"></div>
+                <span class="text-white/70 text-xs">%99.95</span>
+              </div>
             </div>
           </div>
 
-          <div class="text-center mt-12" [@fadeInUp]="'visible'">
-            <a
-              routerLink="/features"
-              class="btn-secondary px-8 py-3 hover:scale-105 transition-all duration-300"
-              aria-label="Tüm özellikleri görüntüle"
-            >
-              Tüm Özellikleri Keşfet
-            </a>
+          <div class="text-center mt-6 sm:mt-8" [@fadeInUp]="'visible'">
+            <div class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">
+              <button (click)="openSubMenu('about')" class="group px-4 py-2 sm:px-6 sm:py-3 bg-white/10 hover:bg-white/20 rounded-lg sm:rounded-xl transition-all duration-500 backdrop-blur-lg border border-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/30">
+                <span class="text-white text-xs sm:text-sm font-semibold group-hover:text-yellow-300 transition-colors">Okul Panel Nedir?</span>
+              </button>
+              
+              <button (click)="openSubMenu('features')" class="group px-4 py-2 sm:px-6 sm:py-3 bg-white/10 hover:bg-white/20 rounded-lg sm:rounded-xl transition-all duration-500 backdrop-blur-lg border border-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/30">
+                <span class="text-white text-xs sm:text-sm font-semibold group-hover:text-yellow-300 transition-colors">Neden Okul Panel?</span>
+              </button>
+              
+              <button (click)="openSubMenu('faq')" class="group px-4 py-2 sm:px-6 sm:py-3 bg-white/10 hover:bg-white/20 rounded-lg sm:rounded-xl transition-all duration-500 backdrop-blur-lg border border-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/30">
+                <span class="text-white text-xs sm:text-sm font-semibold group-hover:text-yellow-300 transition-colors">Sık Sorulan Sorular</span>
+              </button>
+              
+              <button (click)="openSubMenu('testimonials')" class="group px-4 py-2 sm:px-6 sm:py-3 bg-white/10 hover:bg-white/20 rounded-lg sm:rounded-xl transition-all duration-500 backdrop-blur-lg border border-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/30">
+                <span class="text-white text-xs sm:text-sm font-semibold group-hover:text-yellow-300 transition-colors">Kullanıcı Yorumları</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -814,8 +914,18 @@ import { Counter } from '../../shared/utils/counter';
     }
 
     .enhanced-slider::-webkit-slider-thumb:hover {
-      transform: scale(1.2);
-      box-shadow: 0 6px 20px rgba(255, 214, 10, 0.6);
+      transform: scale(1.3) rotate(5deg);
+      box-shadow: 0 8px 25px rgba(255, 214, 10, 0.8), 0 0 30px rgba(255, 214, 10, 0.4);
+      animation: thumbGlow 1s ease-in-out infinite;
+    }
+
+    @keyframes thumbGlow {
+      0%, 100% {
+        box-shadow: 0 8px 25px rgba(255, 214, 10, 0.8), 0 0 30px rgba(255, 214, 10, 0.4);
+      }
+      50% {
+        box-shadow: 0 12px 35px rgba(255, 214, 10, 1), 0 0 50px rgba(255, 214, 10, 0.6);
+      }
     }
 
     .enhanced-slider::-moz-range-thumb {
@@ -842,13 +952,45 @@ import { Counter } from '../../shared/utils/counter';
 
     .animated-price {
       display: inline-block;
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+
+    .animated-price::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 214, 10, 0.2), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .animated-price:hover::before {
+      left: 100%;
     }
 
     /* Price update animation */
     .price-updating {
-      transform: scale(0.98);
-      opacity: 0.8;
+      transform: scale(0.95);
+      opacity: 0.7;
+      animation: pricePulse 0.6s ease-in-out;
+    }
+
+    @keyframes pricePulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(0.9);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
 
     /* Reduced motion support */
@@ -887,11 +1029,34 @@ import { Counter } from '../../shared/utils/counter';
     /* Stats card styles */
     .stats-card {
       padding: 1rem;
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stats-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transition: left 0.6s ease;
     }
     
     .stats-card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .stats-card:hover::before {
+      left: 100%;
+    }
+
+    .stats-card:hover .text-4xl,
+    .stats-card:hover .text-5xl {
+      animation: numberGlow 1s ease-in-out infinite;
     }
     
     /* Number animation styles */
@@ -901,30 +1066,73 @@ import { Counter } from '../../shared/utils/counter';
       font-variant-numeric: tabular-nums;
     }
 
-    /* Phone Mock Animations */
+    @keyframes numberGlow {
+      0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 214, 10, 0.3);
+        transform: scale(1);
+      }
+      50% {
+        text-shadow: 0 0 20px rgba(255, 214, 10, 0.6), 0 0 30px rgba(255, 214, 10, 0.4);
+        transform: scale(1.05);
+      }
+    }
+
+    /* Feature Card Animations - Simplified */
+    .feature-card {
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-card:hover .w-16 {
+      transform: scale(1.1);
+    }
+
+    /* Phone Mock Animations - Simplified */
     @keyframes phoneFloat {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-10px) rotate(1deg); }
+      0%, 100% { 
+        transform: translateY(0px); 
+      }
+      50% { 
+        transform: translateY(-10px); 
+      }
     }
     
     @keyframes cardSlideIn {
-      0% { transform: translateX(-20px); opacity: 0; }
-      100% { transform: translateX(0); opacity: 1; }
+      0% { 
+        transform: translateX(-20px); 
+        opacity: 0; 
+      }
+      100% { 
+        transform: translateX(0); 
+        opacity: 1; 
+      }
     }
     
     @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.7; transform: scale(1.05); }
-    }
-    
-    @keyframes shimmer {
-      0% { background-position: -200px 0; }
-      100% { background-position: 200px 0; }
+      0%, 100% { 
+        opacity: 1; 
+        transform: scale(1); 
+      }
+      50% { 
+        opacity: 0.7; 
+        transform: scale(1.05); 
+      }
     }
     
     .phone-float {
       animation: phoneFloat 6s ease-in-out infinite;
+      transition: all 0.3s ease;
     }
+
+    .phone-float:hover {
+      transform: translateY(-5px) !important;
+      animation-play-state: paused;
+    }
+
     
     .card-slide-in {
       animation: cardSlideIn 0.6s ease-out forwards;
@@ -936,17 +1144,31 @@ import { Counter } from '../../shared/utils/counter';
     }
     
     .shimmer {
-      background: linear-gradient(90deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.05) 100%);
+      background: linear-gradient(90deg, 
+        rgba(255,255,255,0.05) 0%, 
+        rgba(255,255,255,0.1) 50%, 
+        rgba(255,255,255,0.05) 100%
+      );
       background-size: 200px 100%;
       animation: shimmer 2s infinite;
     }
 
-    /* Phone mock container responsive */
+    /* Device mock container responsive */
     @media (max-width: 768px) {
       .phone-mocks-container {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
         align-items: center;
+      }
+      
+      .laptop-float {
+        max-width: 180px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .phone-mocks-container {
+        gap: 2rem;
       }
     }
 
@@ -969,171 +1191,69 @@ import { Counter } from '../../shared/utils/counter';
     #hero-2 .animate-fade-in-up {
       opacity: 1;
       transform: translateY(0) scale(1);
-      animation: hero2FadeInUp 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      animation: hero2FadeInUp 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
     }
 
     #hero-2 .hero-title-glow {
-      background: linear-gradient(135deg, #ffffff 0%, #FFD60A 25%, #ffffff 50%, #FFD60A 75%, #ffffff 100%);
-      background-size: 300% 300%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: hero2TitleGlow 4s ease-in-out infinite, hero2TitleShimmer 2s ease-in-out infinite;
-      text-shadow: 0 0 30px rgba(255, 214, 10, 0.3);
+      color: #ffffff;
+      text-shadow: 0 0 20px rgba(255, 214, 10, 0.3);
+      animation: hero2TitleGlow 4s ease-in-out infinite;
     }
 
     #hero-2 .hero-text-glow {
-      text-shadow: 0 0 25px rgba(255, 255, 255, 0.2), 0 0 50px rgba(255, 214, 10, 0.1);
-      animation: hero2TextGlow 5s ease-in-out infinite;
-      position: relative;
-    }
-
-    #hero-2 .hero-text-glow::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-      animation: hero2TextShimmer 3s ease-in-out infinite;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     }
 
     #hero-2 .hero-badge {
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 214, 10, 0.1) 50%, rgba(255, 255, 255, 0.25) 100%);
-      backdrop-filter: blur(15px);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      animation: hero2BadgeFloat 8s ease-in-out infinite, hero2BadgeGlow 3s ease-in-out infinite;
-      position: relative;
-      overflow: hidden;
-    }
-
-    #hero-2 .hero-badge::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: conic-gradient(from 0deg, transparent, rgba(255, 214, 10, 0.1), transparent);
-      animation: hero2BadgeRotate 4s linear infinite;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    #hero-2 .hero-badge:hover::before {
-      opacity: 1;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
     }
 
     #hero-2 .hero-badge:hover {
-      transform: translateY(-4px) scale(1.08) rotate(1deg);
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 214, 10, 0.2) 50%, rgba(255, 255, 255, 0.35) 100%);
-      box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 214, 10, 0.3);
-      border-color: rgba(255, 214, 10, 0.6);
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.3);
     }
 
     #hero-2 .hero-feature-item {
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      animation: hero2FeatureSlide 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-      position: relative;
-      overflow: hidden;
-    }
-
-    #hero-2 .hero-feature-item::before {
-      content: '';
-      position: absolute;
-      left: -100%;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 214, 10, 0.1), transparent);
-      transition: left 0.6s ease;
-    }
-
-    #hero-2 .hero-feature-item:hover::before {
-      left: 100%;
+      transition: all 0.3s ease;
     }
 
     #hero-2 .hero-feature-item:hover {
-      transform: translateX(12px) scale(1.02);
+      transform: translateX(5px);
       color: #ffffff;
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     }
 
     #hero-2 .hero-feature-icon {
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      animation: hero2IconPulse 3s ease-in-out infinite, hero2IconFloat 4s ease-in-out infinite;
-      filter: drop-shadow(0 0 8px rgba(255, 214, 10, 0.3));
+      transition: all 0.3s ease;
     }
 
     #hero-2 .hero-feature-item:hover .hero-feature-icon {
-      transform: scale(1.3) rotate(10deg) translateY(-2px);
+      transform: scale(1.1);
       color: #FFD60A;
-      filter: drop-shadow(0 0 15px rgba(255, 214, 10, 0.6));
     }
 
     #hero-2 .hero-cta-primary {
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 214, 10, 0.05) 50%, rgba(255, 255, 255, 0.15) 100%);
-      backdrop-filter: blur(15px);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      animation: hero2CtaFloat 6s ease-in-out infinite, hero2CtaGlow 4s ease-in-out infinite;
-      position: relative;
-      overflow: hidden;
-    }
-
-    #hero-2 .hero-cta-primary::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: left 0.6s ease;
-    }
-
-    #hero-2 .hero-cta-primary:hover::before {
-      left: 100%;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
     }
 
     #hero-2 .hero-cta-primary:hover {
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 214, 10, 0.1) 50%, rgba(255, 255, 255, 0.25) 100%);
-      transform: translateY(-4px) scale(1.08);
-      box-shadow: 0 20px 50px rgba(255, 255, 255, 0.25), 0 0 40px rgba(255, 214, 10, 0.2);
-      border-color: rgba(255, 214, 10, 0.6);
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-2px);
     }
 
     #hero-2 .hero-cta-secondary {
-      background: linear-gradient(135deg, #FFD60A 0%, #FFC107 50%, #FFD60A 100%);
-      background-size: 200% 200%;
-      box-shadow: 0 8px 25px rgba(255, 214, 10, 0.4), 0 0 20px rgba(255, 214, 10, 0.2);
-      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      animation: hero2CtaSecondaryGlow 3s ease-in-out infinite, hero2CtaSecondaryFloat 5s ease-in-out infinite;
-      position: relative;
-      overflow: hidden;
-    }
-
-    #hero-2 .hero-cta-secondary::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-      transition: left 0.6s ease;
-    }
-
-    #hero-2 .hero-cta-secondary:hover::before {
-      left: 100%;
+      background: #FFD60A;
+      box-shadow: 0 4px 15px rgba(255, 214, 10, 0.3);
+      transition: all 0.3s ease;
     }
 
     #hero-2 .hero-cta-secondary:hover {
-      background: linear-gradient(135deg, #FFC107 0%, #FFD60A 50%, #FFC107 100%);
-      transform: translateY(-4px) scale(1.08);
-      box-shadow: 0 25px 60px rgba(255, 214, 10, 0.6), 0 0 50px rgba(255, 214, 10, 0.4);
+      background: #FFC107;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(255, 214, 10, 0.4);
     }
 
     /* Enhanced Keyframe Animations */
@@ -1141,6 +1261,10 @@ import { Counter } from '../../shared/utils/counter';
       0% {
         opacity: 0;
         transform: translateY(60px) scale(0.9);
+      }
+      50% {
+        opacity: 0.8;
+        transform: translateY(20px) scale(0.95);
       }
       100% {
         opacity: 1;
@@ -1150,19 +1274,10 @@ import { Counter } from '../../shared/utils/counter';
 
     @keyframes hero2TitleGlow {
       0%, 100% {
-        background-position: 0% 50%;
+        text-shadow: 0 0 20px rgba(255, 214, 10, 0.3);
       }
       50% {
-        background-position: 100% 50%;
-      }
-    }
-
-    @keyframes hero2TitleShimmer {
-      0%, 100% {
-        text-shadow: 0 0 30px rgba(255, 214, 10, 0.3);
-      }
-      50% {
-        text-shadow: 0 0 50px rgba(255, 214, 10, 0.6), 0 0 80px rgba(255, 214, 10, 0.3);
+        text-shadow: 0 0 30px rgba(255, 214, 10, 0.5);
       }
     }
 
@@ -1289,6 +1404,43 @@ import { Counter } from '../../shared/utils/counter';
       }
     }
 
+    /* Hero Section - Static Background */
+    #hero-2 {
+      position: relative;
+    }
+
+    /* Stats Counter Styles */
+    .stats-card {
+      transition: all 0.3s ease;
+    }
+
+    .stats-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .counter-number {
+      font-variant-numeric: tabular-nums;
+      transition: all 0.3s ease;
+    }
+
+    .counter-number:hover {
+      transform: scale(1.05);
+    }
+
+    /* Watermark Animation */
+    @keyframes watermarkFloat {
+      0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-10px) rotate(1deg);
+      }
+    }
+
+    .watermark-animation {
+      animation: watermarkFloat 20s ease-in-out infinite;
+    }
+
     /* Reduced Motion Support */
     @media (prefers-reduced-motion: reduce) {
       #hero-2 .animate-fade-in-up,
@@ -1298,7 +1450,11 @@ import { Counter } from '../../shared/utils/counter';
       #hero-2 .hero-feature-item,
       #hero-2 .hero-feature-icon,
       #hero-2 .hero-cta-primary,
-      #hero-2 .hero-cta-secondary {
+      #hero-2 .hero-cta-secondary,
+      #hero-2::before,
+      .stats-card,
+      .counter-number,
+      .watermark-animation {
         animation: none !important;
         opacity: 1 !important;
         transform: none !important;
@@ -1320,6 +1476,9 @@ export class HomeComponent implements OnInit {
   schoolCount = signal(0);
   studentCount = signal(0);
   satisfactionRate = signal(0);
+
+  // Current time for live data display
+  currentTime = new Date();
 
   // Pricing calculator state
   currentStudentCount = signal(100);
@@ -1367,6 +1526,14 @@ export class HomeComponent implements OnInit {
     
     // Animate stats after component loads
     setTimeout(() => this.animateStats(), 800);
+    
+    // Initialize counter animation
+    setTimeout(() => this.animateCounters(), 1000);
+    
+    // Update current time every minute
+    setInterval(() => {
+      this.currentTime = new Date();
+    }, 60000);
   }
 
 
@@ -1440,6 +1607,48 @@ export class HomeComponent implements OnInit {
     }, 600);
   }
 
+  private animateCounters(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
+    // Animate Günlük Giriş counter
+    const dailyLoginElement = document.querySelector('[data-target="222993"]');
+    if (dailyLoginElement) {
+      Counter.count(0, 222993, (value) => {
+        dailyLoginElement.textContent = value.toLocaleString();
+      }, 3000, this.platformId);
+    }
+
+    // Animate Aktif Kullanıcı counter with delay
+    setTimeout(() => {
+      const activeUserElement = document.querySelector('[data-target="531123"]');
+      if (activeUserElement) {
+        Counter.count(0, 531123, (value) => {
+          activeUserElement.textContent = value.toLocaleString();
+        }, 3500, this.platformId);
+      }
+    }, 500);
+
+    // Animate Aktif Müdürlük counter with delay
+    setTimeout(() => {
+      const activeDeptElement = document.querySelector('[data-target="1299"]');
+      if (activeDeptElement) {
+        Counter.count(0, 1299, (value) => {
+          activeDeptElement.textContent = value.toLocaleString();
+        }, 2500, this.platformId);
+      }
+    }, 1000);
+
+    // Animate Online Kalma Yüzdesi counter with delay
+    setTimeout(() => {
+      const uptimeElement = document.querySelector('[data-target="99.95"]');
+      if (uptimeElement) {
+        Counter.count(0, 99.95, (value) => {
+          uptimeElement.textContent = value.toFixed(2);
+        }, 2000, this.platformId);
+      }
+    }, 1500);
+  }
+
 
   private setupSEO() {
     this.title.setTitle('Okul Panel - Eğitimin Dijital Geleceği | Okul Yönetim Sistemi');
@@ -1463,6 +1672,21 @@ export class HomeComponent implements OnInit {
       name: 'keywords',
       content: 'okul yönetim sistemi, eğitim yazılımı, öğrenci bilgi sistemi, okul paneli, eğitim teknolojisi, KVKK uyumlu, okul otomasyonu'
     });
+  }
+
+  openSubMenu(menuType: string): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    
+    // Scroll to top to show navbar
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Wait for scroll to complete, then open menu with delay
+    setTimeout(() => {
+      const event = new CustomEvent('openSubMenu', { 
+        detail: { menuType: menuType } 
+      });
+      window.dispatchEvent(event);
+    }, 800); // Increased delay for smooth scroll completion
   }
 }
 

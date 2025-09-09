@@ -24,9 +24,8 @@ import { fadeInAnimation, slideUpAnimation } from '../../animations/page-animati
               class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight hero-main-title"
               [@slideUp]
             >
-              <span class="hero-title-line" style="animation-delay: 0.1s">Eğitimin</span>
-              <span class="text-accent-500 block hero-title-line hero-accent" style="animation-delay: 0.2s">Dijital Geleceği</span>
-              <span class="hero-title-line" style="animation-delay: 0.3s">Burada Başlıyor</span>
+              <span class="text-accent-500 hero-title-line hero-accent" style="animation-delay: 0.1s">Okul Panel:</span>
+              <span class="text-white block hero-title-line" style="animation-delay: 0.2s">Okulunuzun Dijital Geleceği</span>
             </h1>
             
             <p 
@@ -34,8 +33,9 @@ import { fadeInAnimation, slideUpAnimation } from '../../animations/page-animati
               [@slideUp]
               style="animation-delay: 0.4s"
             >
-              Okul yönetiminizi kolaylaştıran, öğrenci başarısını artıran ve velilerle 
-              iletişimi güçlendiren kapsamlı eğitim yönetim sistemi.
+              Eğitim yönetimini tek merkezden dijitalleştiren, öğretmenlere kolaylık sağlayan, 
+              velilerle iletişimi hızlandıran ve öğrencilerin akademik başarısını artıran kapsamlı 
+              veli bilgilendirme ve okul yönetim sistemi.
             </p>
 
             <!-- CTA Buttons -->

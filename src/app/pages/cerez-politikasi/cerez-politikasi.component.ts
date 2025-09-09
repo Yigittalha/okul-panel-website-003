@@ -3,72 +3,120 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 
+import { NavbarComponent } from '../../components/navbar/navbar.component';
+
 @Component({
   selector: 'app-cerez-politikasi',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, NavbarComponent],
   template: `
-    <div class="min-h-screen bg-white">
-      <!-- Header -->
-      <header class="bg-primary-950 text-white py-8">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-              <div class="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center">
-                <svg class="w-6 h-6 text-primary-950" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                </svg>
-              </div>
-              <span class="text-2xl font-bold">Okul Panel</span>
-            </div>
-            <a routerLink="/" class="text-accent-500 hover:text-accent-400 transition-colors">
-              Ana Sayfaya Dön
-            </a>
+    <div class="min-h-screen">
+      <app-navbar></app-navbar>
+      
+      <main class="pt-20">
+        <!-- Header -->
+        <header class="bg-gradient-to-br from-primary-950 to-primary-800 text-white py-20">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold">Çerez Politikası</h1>
+            <p class="text-white/80 mt-4">Son güncelleme: 1 Ocak 2024</p>
           </div>
-          <h1 class="text-4xl font-bold mt-8">Çerez Politikası</h1>
-          <p class="text-white/80 mt-4">Son güncelleme: 1 Ocak 2024</p>
-        </div>
-      </header>
+        </header>
 
-      <!-- Content -->
-      <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="prose prose-lg max-w-none">
-          <section class="mb-12">
-            <h2 class="text-2xl font-bold text-neutral-900 mb-4">Çerez Politikası</h2>
-            <p class="text-neutral-700 leading-relaxed mb-4">
-              Bu çerez politikası, Okul Panel web sitesinde kullanılan çerezler hakkında 
-              bilgi vermektedir. Sitemizi ziyaret ettiğinizde çerezlerin nasıl kullanıldığını 
-              öğrenmek için bu politikayı okuyunuz.
-            </p>
-          </section>
+        <!-- Content -->
+        <section class="section py-20 bg-white">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-lg max-w-none">
+              <h2>1. Çerez Nedir?</h2>
+              <p>
+                Çerezler, web sitelerini ziyaret ettiğinizde tarayıcınız tarafından bilgisayarınıza 
+                veya mobil cihazınıza kaydedilen küçük metin dosyalarıdır.
+              </p>
 
-          <section class="mb-12">
-            <h2 class="text-2xl font-bold text-neutral-900 mb-4">Çerez Nedir?</h2>
-            <p class="text-neutral-700 leading-relaxed mb-4">
-              Çerezler, web sitelerinin kullanıcıların cihazlarında sakladığı küçük metin dosyalarıdır. 
-              Bu dosyalar, web sitesinin daha verimli çalışmasını sağlar ve kullanıcı deneyimini geliştirir.
-            </p>
-          </section>
-        </div>
+              <h2>2. Çerez Türleri</h2>
+              <p>Web sitemizde aşağıdaki çerez türlerini kullanmaktayız:</p>
+              
+              <h3>Zorunlu Çerezler</h3>
+              <p>
+                Web sitesinin temel işlevlerini yerine getirmesi için gerekli olan çerezlerdir. 
+                Bu çerezler olmadan web sitesi düzgün çalışmaz.
+              </p>
 
-        <!-- Back to Home -->
-        <div class="mt-12 pt-8 border-t border-neutral-200 text-center">
-          <a 
-            routerLink="/" 
-            class="btn-primary inline-flex items-center space-x-2"
-          >
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-            </svg>
-            <span>Ana Sayfaya Dön</span>
-          </a>
-        </div>
+              <h3>Analitik Çerezler</h3>
+              <p>
+                Web sitesinin nasıl kullanıldığını anlamamıza yardımcı olan çerezlerdir. 
+                Bu çerezler sayesinde site performansını iyileştirebiliriz.
+              </p>
+
+              <h3>Fonksiyonel Çerezler</h3>
+              <p>
+                Kullanıcı tercihlerini hatırlayarak daha kişiselleştirilmiş bir deneyim 
+                sunmamızı sağlayan çerezlerdir.
+              </p>
+
+              <h2>3. Çerez Kullanım Amaçları</h2>
+              <p>Çerezleri aşağıdaki amaçlarla kullanmaktayız:</p>
+              <ul>
+                <li>Web sitesinin işlevselliğini sağlama</li>
+                <li>Kullanıcı deneyimini iyileştirme</li>
+                <li>Site trafiğini analiz etme</li>
+                <li>Güvenlik önlemlerini uygulama</li>
+                <li>Kişiselleştirilmiş içerik sunma</li>
+              </ul>
+
+              <h2>4. Çerez Yönetimi</h2>
+              <p>
+                Tarayıcınızın ayarlarından çerezleri yönetebilir, silebilir veya 
+                engelleyebilirsiniz. Ancak bazı çerezleri devre dışı bırakmanız 
+                web sitesinin işlevselliğini etkileyebilir.
+              </p>
+
+              <h2>5. Üçüncü Taraf Çerezler</h2>
+              <p>
+                Web sitemizde Google Analytics gibi üçüncü taraf hizmetlerin 
+                çerezleri de kullanılabilir. Bu çerezlerin kullanımı ilgili 
+                şirketlerin gizlilik politikalarına tabidir.
+              </p>
+
+              <h2>6. Çerez Politikası Güncellemeleri</h2>
+              <p>
+                Bu çerez politikası gerektiğinde güncellenebilir. Önemli 
+                değişiklikler web sitesinde duyurulacaktır.
+              </p>
+
+              <h2>7. İletişim</h2>
+              <p>
+                Çerez politikamız hakkında sorularınızı 
+                <a href="mailto:info@okulpanel.com" class="text-accent-600 hover:text-accent-700">
+                  info@okulpanel.com
+                </a> 
+                adresine iletebilirsiniz.
+              </p>
+
+              <div class="mt-12 pt-8 border-t border-neutral-200 text-center">
+                <a 
+                  routerLink="/" 
+                  class="btn-primary inline-flex items-center space-x-2"
+                >
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                  </svg>
+                  <span>Ana Sayfaya Dön</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   `,
   styles: [`
     :host {
       display: block;
+    }
+    
+    .prose h2 {
+      border-bottom: 2px solid #FFD60A;
+      padding-bottom: 0.5rem;
     }
   `],
 })

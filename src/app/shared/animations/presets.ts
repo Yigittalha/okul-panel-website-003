@@ -170,20 +170,29 @@ export const navbarSticky = trigger('navbarSticky', [
   ])
 ]);
 
-// Mobile Menu Toggle Animation
+// Mobile Menu Toggle Animation (Simple Side Slide)
 export const mobileMenuToggle = trigger('mobileMenuToggle', [
-  state('closed', style({ 
-    height: '0px', 
-    opacity: 0,
-    overflow: 'hidden'
-  })),
   state('open', style({ 
-    height: '*', 
-    opacity: 1,
-    overflow: 'visible'
+    transform: 'translateX(0)',
+    opacity: 1
   })),
-  transition('closed <=> open', [
-    animate(`${ANIMATION_DURATION.m}ms ${ANIMATION_EASING.standard}`)
+  transition(':enter', [
+    style({ 
+      transform: 'translateX(100%)',
+      opacity: 0
+    }),
+    animate(`${ANIMATION_DURATION.m}ms ${ANIMATION_EASING.standard}`, 
+      style({ 
+        transform: 'translateX(0)',
+        opacity: 1
+      }))
+  ]),
+  transition(':leave', [
+    animate(`${ANIMATION_DURATION.s}ms ${ANIMATION_EASING.exit}`, 
+      style({ 
+        transform: 'translateX(100%)',
+        opacity: 0
+      }))
   ])
 ]);
 

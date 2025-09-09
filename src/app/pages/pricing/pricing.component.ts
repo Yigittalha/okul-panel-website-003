@@ -4,52 +4,70 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 
-import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { PricingService, PricingCalculation } from '../../services/pricing.service';
 import { Counter } from '../../shared/utils/counter';
+import { NavbarComponent } from '../../components/navbar/navbar.component';
+import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation } from '../../animations/page-animations';
 
 @Component({
   selector: 'app-pricing-page',
   standalone: true,
   imports: [CommonModule, RouterModule, FormsModule, NavbarComponent],
+  animations: [fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation],
   template: `
-    <div class="min-h-screen bg-white">
+    <div class="min-h-screen">
       <app-navbar></app-navbar>
       
       <main class="pt-20">
         <!-- Header -->
-        <section class="section py-20 gradient-bg text-white">
+        <section class="section py-10 bg-gradient-to-r from-primary-950 via-primary-900 to-primary-950 text-white">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl lg:text-6xl font-bold mb-6">
-              Şeffaf <span class="text-accent-500">Fiyatlandırma</span>
-            </h1>
-            <p class="text-xl lg:text-2xl text-white/80 max-w-4xl mx-auto">
-              İhtiyacınıza uygun paketi seçin. 3 gün deneme süreci ile sistemi test edin.
-            </p>
+            <div [@fadeIn]>
+              <a routerLink="/" class="inline-block text-white/60 hover:text-white text-sm mb-4 transition-colors duration-300">
+                ← Ana Sayfaya Dön
+              </a>
+              <h1 class="text-4xl lg:text-6xl font-bold mb-6">
+                Şeffaf <span class="text-accent-500">Fiyatlandırma</span>
+              </h1>
+              <p class="text-xl lg:text-2xl text-white/80 max-w-4xl mx-auto">
+                İhtiyacınıza uygun paketi seçin. 3 gün deneme süreci ile sistemi test edin.
+              </p>
+            </div>
           </div>
         </section>
 
         <!-- Pricing Calculator -->
-        <section class="section py-16 bg-neutral-50">
-          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-2xl shadow-lg border border-neutral-200 p-6">
-              <h2 class="text-2xl font-bold text-neutral-900 mb-6 text-center">
-                Fiyat Hesaplayıcı
-              </h2>
+        <section class="section py-20 bg-gradient-to-br from-primary-950 via-primary-900 to-primary-950 relative overflow-hidden">
+          <!-- Background Elements -->
+          <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.03%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%224%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+          
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white/10 backdrop-blur-md rounded-3xl shadow-2xl border border-white/20 p-8 lg:p-10 hover:bg-white/15 transition-all duration-300" [@slideUp]>
+              <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-accent-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-8 h-8 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white mb-2">
+                  Fiyat Hesaplayıcı
+                </h2>
+                <p class="text-white/70">Öğrenci sayısına göre fiyatınızı hesaplayın</p>
+              </div>
 
               <!-- Compact Calculator -->
               <div class="grid lg:grid-cols-2 gap-8 items-center">
                 <!-- Left: Controls -->
                 <div class="space-y-6">
                   <!-- School Type Info -->
-                  <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                  <div class="bg-white/20 border border-white/30 rounded-lg p-3">
                     <div class="flex items-start">
-                      <svg class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-5 h-5 text-accent-400 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
                       </svg>
                       <div>
-                        <h4 class="font-semibold text-blue-800 text-sm mb-1">Okul Türü</h4>
-                        <p class="text-blue-800 text-xs">
+                        <h4 class="font-semibold text-white text-sm mb-1">Okul Türü</h4>
+                        <p class="text-white/80 text-xs">
                           <strong>Özel Okullar:</strong> Tam destek paketi<br>
                           <strong>Devlet Okulları:</strong> Özel fiyatlandırma
                         </p>
@@ -59,8 +77,8 @@ import { Counter } from '../../shared/utils/counter';
 
                   <!-- Student Count Input -->
                   <div>
-                    <label for="studentCount" class="block text-sm font-semibold text-neutral-700 mb-3">
-                      Öğrenci Sayısı: <span class="text-accent-600">{{ currentStudentCount() }}</span>
+                    <label for="studentCount" class="block text-sm font-semibold text-white mb-3">
+                      Öğrenci Sayısı: <span class="text-accent-400">{{ currentStudentCount() }}</span>
                     </label>
                     
                     <!-- Range Slider -->
@@ -76,7 +94,7 @@ import { Counter } from '../../shared/utils/counter';
                         class="w-full h-2 bg-neutral-200 rounded-lg appearance-none cursor-pointer slider"
                         aria-label="Öğrenci sayısı slider"
                       />
-                      <div class="flex justify-between text-xs text-neutral-500 mt-1">
+                      <div class="flex justify-between text-xs text-white/60 mt-1">
                         <span>{{ constraints.min }}</span>
                         <span>{{ constraints.max }}</span>
                       </div>
@@ -91,26 +109,26 @@ import { Counter } from '../../shared/utils/counter';
                         [step]="constraints.step"
                         [ngModel]="currentStudentCount()"
                         (ngModelChange)="updateStudentCount($event)"
-                        class="w-32 px-3 py-2 text-center text-sm border border-neutral-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
+                        class="w-32 px-3 py-2 text-center text-sm bg-white/10 border border-white/30 rounded-xl text-white placeholder-white/60 focus:ring-2 focus:ring-accent-400 focus:border-accent-400 focus:bg-white/20 transition-all duration-300"
                         aria-label="Öğrenci sayısı input"
                       />
                     </div>
                   </div>
 
                   <!-- Price Breakdown -->
-                  <div class="bg-neutral-50 rounded-lg p-3 text-xs">
-                    <div class="space-y-1 text-neutral-600">
+                  <div class="bg-white/20 border border-white/30 rounded-xl p-4 text-xs">
+                    <div class="space-y-1 text-white/80">
                       <div class="flex justify-between">
                         <span>Taban fiyat:</span>
                         <span>{{ pricingService.formatPrice(calculation().basePrice) }}</span>
                       </div>
                       <div class="flex justify-between">
-                        <span>Öğrenci başı:</span>
+                        <span>Öğrenci başına:</span>
                         <span>{{ pricingService.formatPrice(calculation().perStudentPrice) }}</span>
                       </div>
-                      <div class="flex justify-between border-t border-neutral-200 pt-1 font-semibold">
+                      <div class="flex justify-between font-semibold text-accent-400">
                         <span>Toplam:</span>
-                        <span class="text-primary-950">{{ animatedPrice() }}</span>
+                        <span>{{ pricingService.formatPrice(calculation().totalPrice) }}</span>
                       </div>
                     </div>
                   </div>
@@ -120,33 +138,33 @@ import { Counter } from '../../shared/utils/counter';
                 <div class="space-y-6">
                   <!-- Price Display -->
                   <div class="text-center">
-                    <div class="text-4xl font-bold text-primary-950 mb-2">
+                    <div class="text-4xl font-bold text-white mb-2">
                       <span class="animated-number">{{ animatedPrice() }}</span>
-                      <span class="text-lg font-normal text-neutral-600">/yıllık</span>
+                      <span class="text-lg font-normal text-white/70">/yıllık</span>
                     </div>
-                    <p class="text-sm text-neutral-500">
+                    <p class="text-sm text-white/60">
                       {{ calculation().studentCount }} öğrenci için
                     </p>
                   </div>
 
                   <!-- Compact Features -->
-                  <div class="grid grid-cols-2 gap-3 text-xs">
+                  <div class="grid grid-cols-2 gap-4 text-xs">
                     <div>
-                      <h4 class="font-semibold text-neutral-900 mb-2">Özellikler</h4>
-                      <ul class="space-y-1 text-neutral-600">
-                        <li class="flex items-center"><span class="text-green-500 mr-1">✓</span> Öğrenci Yönetimi</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-1">✓</span> Veli Bildirimleri</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-1">✓</span> Ders Programı</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-1">✓</span> Devamsızlık</li>
+                      <h4 class="font-semibold text-white mb-3">Özellikler</h4>
+                      <ul class="space-y-2 text-white/80">
+                        <li class="flex items-center"><span class="text-accent-400 mr-2">✓</span> Öğrenci Yönetimi</li>
+                        <li class="flex items-center"><span class="text-accent-400 mr-2">✓</span> Veli Bildirimleri</li>
+                        <li class="flex items-center"><span class="text-accent-400 mr-2">✓</span> Ders Programı</li>
+                        <li class="flex items-center"><span class="text-accent-400 mr-2">✓</span> Devamsızlık</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-neutral-900 mb-2">Destek</h4>
-                      <ul class="space-y-1 text-neutral-600">
-                        <li class="flex items-center"><span class="text-blue-500 mr-1">✓</span> 7/24 Destek</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-1">✓</span> Ücretsiz Kurulum</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-1">✓</span> Eğitim</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-1">✓</span> Güncellemeler</li>
+                      <h4 class="font-semibold text-white mb-3">Destek</h4>
+                      <ul class="space-y-2 text-white/80">
+                        <li class="flex items-center"><span class="text-accent-400 mr-2">✓</span> 7/24 Destek</li>
+                        <li class="flex items-center"><span class="text-accent-400 mr-2">✓</span> Ücretsiz Kurulum</li>
+                        <li class="flex items-center"><span class="text-accent-400 mr-2">✓</span> Eğitim</li>
+                        <li class="flex items-center"><span class="text-accent-400 mr-2">✓</span> Güncellemeler</li>
                       </ul>
                     </div>
                   </div>
@@ -155,9 +173,12 @@ import { Counter } from '../../shared/utils/counter';
                   <div class="text-center">
                     <a
                       routerLink="/contact"
-                      class="btn-primary px-8 py-3 text-sm font-semibold"
+                      class="inline-flex items-center bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
                       aria-label="Teklif almak için iletişim sayfasına git"
                     >
+                      <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                      </svg>
                       Detaylı Teklif Al
                     </a>
                   </div>
@@ -165,14 +186,14 @@ import { Counter } from '../../shared/utils/counter';
               </div>
 
               <!-- Warning -->
-              <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
+              <div class="bg-amber-500/20 border border-amber-400/30 rounded-xl p-4 mt-6">
                 <div class="flex items-start">
-                  <svg class="w-5 h-5 text-amber-600 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg class="w-5 h-5 text-amber-400 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
                   </svg>
                   <div>
-                    <h4 class="font-semibold text-amber-800 text-sm mb-1">Önemli Uyarı</h4>
-                    <p class="text-amber-800 text-xs">
+                    <h4 class="font-semibold text-white text-sm mb-1">Önemli Uyarı</h4>
+                    <p class="text-white/80 text-xs">
                       {{ pricingService.getDetailedDisclaimerText() }}
                     </p>
                   </div>
@@ -182,18 +203,6 @@ import { Counter } from '../../shared/utils/counter';
           </div>
         </section>
 
-        <!-- Back to Home -->
-        <section class="section py-16 bg-white">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <a
-              routerLink="/"
-              class="btn-secondary px-8 py-3 inline-block"
-              aria-label="Ana sayfaya dön"
-            >
-              ← Ana Sayfaya Dön
-            </a>
-          </div>
-        </section>
       </main>
     </div>
   `,
@@ -201,54 +210,35 @@ import { Counter } from '../../shared/utils/counter';
     :host {
       display: block;
     }
-    
     .section {
       content-visibility: auto;
       contain-intrinsic-size: 1px 1000px;
     }
-
+    .slider {
+      background: linear-gradient(to right, #f59e0b 0%, #f59e0b var(--value, 0%), #e5e7eb var(--value, 0%), #e5e7eb 100%);
+    }
     .slider::-webkit-slider-thumb {
       appearance: none;
       height: 20px;
       width: 20px;
       border-radius: 50%;
-      background: #FFD60A;
+      background: #f59e0b;
       cursor: pointer;
-      border: 2px solid #0D1B2A;
-      transition: transform 0.2s ease;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border: 2px solid #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
-
-    .slider::-webkit-slider-thumb:hover {
-      transform: scale(1.1);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-
     .slider::-moz-range-thumb {
       height: 20px;
       width: 20px;
       border-radius: 50%;
-      background: #FFD60A;
+      background: #f59e0b;
       cursor: pointer;
-      border: 2px solid #0D1B2A;
-      transition: transform 0.2s ease;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border: 2px solid #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
-
-    .slider::-moz-range-thumb:hover {
-      transform: scale(1.1);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-
     .animated-number {
       display: inline-block;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      transform-origin: center;
-    }
-
-    .animated-number.updating {
-      transform: scale(1.05);
-      color: #FFD60A;
+      transition: all 0.3s ease;
     }
   `]
 })
@@ -258,81 +248,42 @@ export class PricingPageComponent implements OnInit {
   public pricingService = inject(PricingService);
   private platformId = inject(PLATFORM_ID);
 
-  currentStudentCount = signal(100);
-  constraints = this.pricingService.getConstraints();
-  
-  // Animated price state
-  private displayPrice = signal(750);
-  private isAnimating = signal(false);
-  
-  // Computed property for current calculation based on student count
-  calculation = computed(() => {
-    return this.pricingService.getBasicCalculation(this.currentStudentCount());
-  });
-  
-  // Computed property for formatted animated price
-  animatedPrice = computed(() => this.pricingService.formatPrice(this.displayPrice()));
+  // Signals
+  studentCount = signal(100);
+  isScrolled = signal(false);
+  animatedPrice = signal('₺0');
 
-  // Single effect to handle price animation when student count changes
-  private priceEffect = effect(() => {
-    if (isPlatformBrowser(this.platformId)) {
-      const studentCount = this.currentStudentCount();
-      const newCalculation = this.pricingService.getBasicCalculation(studentCount);
-      this.animateToPrice(newCalculation.finalTotal);
-    } else {
-      // SSR: Set price immediately without animation
-      const studentCount = this.currentStudentCount();
-      const newCalculation = this.pricingService.getBasicCalculation(studentCount);
-      this.displayPrice.set(newCalculation.finalTotal);
-    }
-  });
+  // Computed
+  calculation = computed(() => this.pricingService.getBasicCalculation(this.studentCount()));
+  currentStudentCount = computed(() => this.studentCount());
+
+  // Constraints
+  constraints = {
+    min: 50,
+    max: 2000,
+    step: 50
+  };
+
+  constructor() {
+    // Effect to update price changes
+    effect(() => {
+      const newPrice = this.pricingService.formatPrice(this.calculation().totalPrice);
+      this.animatedPrice.set(newPrice);
+    });
+  }
 
   ngOnInit() {
-    this.title.setTitle('Fiyatlandırma - Okul Panel | Şeffaf ve Uygun Fiyat Planları');
+    this.title.setTitle('Fiyatlandırma - Okul Panel | Şeffaf Fiyatlandırma');
     this.meta.updateTag({
       name: 'description',
-      content: 'Okul Panel fiyat hesaplayıcı ile okulunuza uygun planı bulun. Şeffaf fiyatlandırma, 3 gün deneme süreci.'
+      content: 'Okul Panel fiyatlandırması. Öğrenci sayısına göre fiyat hesaplayın. 3 gün ücretsiz deneme. Şeffaf fiyatlandırma politikası.'
     });
 
-    // Initialize display price
-    const initialCalculation = this.pricingService.getBasicCalculation(100);
-    this.displayPrice.set(initialCalculation.finalTotal);
+    // Set initial animated price
+    this.animatedPrice.set(this.pricingService.formatPrice(this.calculation().totalPrice));
   }
 
-  updateStudentCount(count: number | string): void {
-    const numericCount = typeof count === 'string' ? parseInt(count, 10) : count;
-    if (!isNaN(numericCount) && numericCount >= 0) {
-      // Update local signal directly instead of going through service
-      this.currentStudentCount.set(numericCount);
-    }
-  }
-
-  private animateToPrice(targetPrice: number): void {
-    // Only animate in browser
-    if (!isPlatformBrowser(this.platformId)) {
-      this.displayPrice.set(targetPrice);
-      return;
-    }
-    
-    if (this.isAnimating()) return;
-    
-    const startPrice = this.displayPrice();
-    if (startPrice === targetPrice) return;
-    
-    this.isAnimating.set(true);
-    
-    // Use Counter utility for smooth animation
-    Counter.animate({
-      from: startPrice,
-      to: targetPrice,
-      duration: 500, // Slightly longer for pricing page
-      easing: Counter.easing.easeOutCubic,
-      onUpdate: (value) => {
-        this.displayPrice.set(value);
-      },
-      onComplete: () => {
-        this.isAnimating.set(false);
-      }
-    }, this.platformId);
+  updateStudentCount(value: number) {
+    this.studentCount.set(value);
   }
 }

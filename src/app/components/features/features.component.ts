@@ -1,5 +1,6 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { ContentService } from '../../services/content.service';
 import { Feature } from '../../interfaces/content.interface';
 import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation } from '../../animations/page-animations';
@@ -7,17 +8,20 @@ import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation }
 @Component({
   selector: 'app-features',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   animations: [fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation],
   template: `
-    <section id="ozellikler" class="min-h-screen py-20 bg-gradient-to-br from-neutral-50 via-blue-50 to-accent-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="ozellikler" class="min-h-screen pt-0 pb-20 bg-gradient-to-r from-primary-950 via-primary-900 to-primary-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
         <!-- Section Header -->
         <div class="text-center mb-16" [@fadeIn]>
-          <h2 class="text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
+          <a routerLink="/" class="inline-block text-white/60 hover:text-white text-sm mb-4 transition-colors duration-300">
+            ← Ana Sayfaya Dön
+          </a>
+          <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
             Güçlü <span class="text-accent-500">Özellikler</span>
           </h2>
-          <p class="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
+          <p class="text-xl text-white/80 max-w-4xl mx-auto leading-relaxed">
             Okul yönetiminizi kolaylaştıran, öğrenci başarısını artıran ve eğitim kalitesini 
             yüksek tutan kapsamlı özellikler. Her ihtiyacınız için özel olarak tasarlanmış çözümler.
           </p>
@@ -27,7 +31,7 @@ import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation }
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" [@stagger]>
           @for (feature of features(); track feature.id) {
             <div class="group">
-              <div class="card p-6 h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-neutral-200">
+              <div class="card p-6 h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-white/20 bg-white/10 backdrop-blur-sm">
                 <!-- Icon -->
                 <div class="mb-6">
                   <div 
@@ -81,10 +85,10 @@ import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation }
 
                 <!-- Content -->
                 <div>
-                  <h3 class="text-xl font-semibold text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors duration-300">
+                  <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-accent-400 transition-colors duration-300">
                     {{ feature.title }}
                   </h3>
-                  <p class="text-neutral-600 leading-relaxed">
+                  <p class="text-white/80 leading-relaxed">
                     {{ feature.description }}
                   </p>
                 </div>
@@ -98,11 +102,11 @@ import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation }
 
         <!-- Call to Action -->
         <div class="text-center mt-16" [@fadeIn]>
-          <div class="bg-white rounded-2xl p-8 shadow-lg border border-neutral-200 max-w-3xl mx-auto">
-            <h3 class="text-2xl font-bold text-neutral-900 mb-4">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 max-w-3xl mx-auto">
+            <h3 class="text-2xl font-bold text-white mb-4">
               Tüm Özellikleri Deneyimleyin
             </h3>
-            <p class="text-neutral-600 mb-6">
+            <p class="text-white/80 mb-6">
               30 gün ücretsiz deneme sürümü ile tüm özelliklerimizi test edin. 
               Kredi kartı bilgisi gerekmez.
             </p>
