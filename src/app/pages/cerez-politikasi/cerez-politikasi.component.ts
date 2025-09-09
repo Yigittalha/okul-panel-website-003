@@ -15,10 +15,10 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
       
       <main class="pt-20">
         <!-- Header -->
-        <header class="bg-gradient-to-br from-primary-950 to-primary-800 text-white py-20">
+        <header class="bg-white text-black py-20">
           <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-4xl font-bold">Çerez Politikası</h1>
-            <p class="text-white/80 mt-4">Son güncelleme: 1 Ocak 2024</p>
+            <h1 class="text-4xl font-bold text-black">Çerez Politikası</h1>
+            <p class="text-gray-600 mt-4">Son güncelleme: 1 Ocak 2024</p>
           </div>
         </header>
 

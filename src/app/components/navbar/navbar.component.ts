@@ -108,6 +108,33 @@ import { filter } from 'rxjs/operators';
                     </div>
                   </a>
                   
+                  <a href="/pricing" class="group block px-6 py-4 text-gray-900 hover:bg-gradient-to-r hover:from-accent-50/80 hover:to-blue-50/80 hover:text-accent-800 transition-all duration-400 rounded-xl mx-2 hover:shadow-lg hover:scale-105 hover:backdrop-blur-md">
+                    <div class="font-semibold text-lg group-hover:text-accent-800 transition-colors">Şeffaf Fiyatlandırma</div>
+                    <div class="text-sm text-gray-700 group-hover:text-accent-700 mt-1">Yıllık %15 indirim + 3 gün ücretsiz deneme</div>
+                    <div class="mt-2 flex space-x-2">
+                      <button 
+                        (click)="selectSchoolType('private')"
+                        [class]="selectedSchoolType() === 'private' ? 'bg-green-500 text-white shadow-lg' : 'bg-green-100 text-green-800 hover:bg-green-200'"
+                        class="inline-flex items-center px-2 py-1 text-xs font-medium rounded-lg transition-all duration-300 cursor-pointer"
+                      >
+                        Özel Okul
+                      </button>
+                      <button 
+                        (click)="selectSchoolType('public')"
+                        [class]="selectedSchoolType() === 'public' ? 'bg-blue-500 text-white shadow-lg' : 'bg-blue-100 text-blue-800 hover:bg-blue-200'"
+                        class="inline-flex items-center px-2 py-1 text-xs font-medium rounded-lg transition-all duration-300 cursor-pointer"
+                      >
+                        Devlet Okulu
+                      </button>
+                    </div>
+                    <div class="text-xs text-gray-600 group-hover:text-gray-800 mt-2 font-medium flex items-center">
+                      <span>Fiyatları görüntüle</span>
+                      <svg class="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                      </svg>
+                    </div>
+                  </a>
+                  
                   <a href="/faq" class="group block px-6 py-4 text-gray-900 hover:bg-gradient-to-r hover:from-accent-50/80 hover:to-blue-50/80 hover:text-accent-800 transition-all duration-400 rounded-xl mx-2 hover:shadow-lg hover:scale-105 hover:backdrop-blur-md">
                     <div class="font-semibold text-lg group-hover:text-accent-800 transition-colors">Sık Sorulan Sorular</div>
                     <div class="text-sm text-gray-700 group-hover:text-accent-700 mt-1">Merak edilen sorular ve cevapları</div>
@@ -378,6 +405,7 @@ export class NavbarComponent implements OnInit {
   mobileMenuOpen = signal(false);
   isHomePage = signal(true);
   subMenuOpen = signal(false);
+  selectedSchoolType = signal<'private' | 'public'>('private');
 
   ngOnInit() {
     this.navigationItems.set(this.contentService.getNavigationItems());
@@ -487,6 +515,13 @@ export class NavbarComponent implements OnInit {
     const isHome = currentUrl === '/' || currentUrl === '';
     const shouldShow = !isHome || this.isScrolled();
     return shouldShow ? '1px solid rgba(255, 255, 255, 0.1)' : 'none';
+  }
+
+  selectSchoolType(type: 'private' | 'public'): void {
+    this.selectedSchoolType.set(type);
+    // Navigate to pricing page with school type parameter
+    this.router.navigate(['/pricing'], { queryParams: { schoolType: type } });
+    this.subMenuOpen.set(false);
   }
 
   // Method removed - now using routerLink directly

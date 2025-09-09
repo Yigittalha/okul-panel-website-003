@@ -16,12 +16,12 @@ import { fadeInAnimation, slideUpAnimation } from '../../animations/page-animati
       </div>
 
       <!-- Content Container -->
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-20">
+        <div class="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           <!-- Left Column - Text Content -->
           <div class="text-center lg:text-left" [@fadeIn]>
             <h1 
-              class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight hero-main-title"
+              class="text-2xl sm:text-3xl lg:text-6xl font-bold text-white mb-4 lg:mb-6 leading-tight hero-main-title"
               [@slideUp]
             >
               <span class="text-accent-500 hero-title-line hero-accent" style="animation-delay: 0.1s">Okul Panel:</span>
@@ -29,7 +29,7 @@ import { fadeInAnimation, slideUpAnimation } from '../../animations/page-animati
             </h1>
             
             <p 
-              class="text-xl lg:text-2xl text-white/80 mb-8 max-w-2xl mx-auto lg:mx-0 hero-description"
+              class="text-sm sm:text-base lg:text-2xl text-white/80 mb-4 lg:mb-8 max-w-2xl mx-auto lg:mx-0 hero-description"
               [@slideUp]
               style="animation-delay: 0.4s"
             >
@@ -39,23 +39,23 @@ import { fadeInAnimation, slideUpAnimation } from '../../animations/page-animati
             </p>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start hero-cta-container" [@slideUp] style="animation-delay: 0.5s">
+            <div class="flex flex-col sm:flex-row gap-2 lg:gap-4 justify-center lg:justify-start hero-cta-container" [@slideUp] style="animation-delay: 0.5s">
               <button 
-                class="btn-primary text-lg px-8 py-4 shadow-2xl hover:shadow-accent-500/25 hero-cta-primary"
+                class="btn-primary text-sm lg:text-lg px-4 py-2 lg:px-8 lg:py-4 shadow-2xl hover:shadow-accent-500/25 hero-cta-primary"
                 (click)="requestDemo()"
                 style="animation-delay: 0.6s"
               >
                 Ücretsiz Demo Talep Et
               </button>
               <button 
-                class="btn-secondary text-lg px-8 py-4 border-white/30 text-white hover:bg-white hover:text-primary-950 hero-cta-secondary"
+                class="btn-secondary text-sm lg:text-lg px-4 py-2 lg:px-8 lg:py-4 border-white/30 text-white hover:bg-white hover:text-primary-950 hero-cta-secondary"
                 (click)="downloadBrochure()"
                 style="animation-delay: 0.7s"
               >
                 Broşür İndir
               </button>
               <button 
-                class="bg-gradient-to-r from-green-500 to-emerald-600 text-white text-lg px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-green-500/30 hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-green-300 hero-cta-special"
+                class="bg-gradient-to-r from-green-500 to-emerald-600 text-white text-sm lg:text-lg px-4 py-2 lg:px-8 lg:py-4 rounded-xl font-semibold shadow-xl hover:shadow-green-500/30 hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-green-300 hero-cta-special"
                 (click)="startLiveDemo()"
                 style="animation-delay: 0.8s"
               >
@@ -64,7 +64,7 @@ import { fadeInAnimation, slideUpAnimation } from '../../animations/page-animati
             </div>
 
             <!-- Trust Indicators -->
-            <div class="mt-12 flex flex-wrap justify-center lg:justify-start gap-6 text-white/60 hero-trust-container" [@slideUp] style="animation-delay: 0.9s">
+            <div class="mt-6 lg:mt-12 flex flex-wrap justify-center lg:justify-start gap-3 lg:gap-6 text-white/60 hero-trust-container" [@slideUp] style="animation-delay: 0.9s">
               <div class="flex items-center space-x-2 hero-trust-item" style="animation-delay: 1.0s">
                 <svg class="w-5 h-5 text-accent-500 hero-trust-icon" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
@@ -92,8 +92,8 @@ import { fadeInAnimation, slideUpAnimation } from '../../animations/page-animati
               <!-- Device Mockup -->
               <div class="relative">
                 <!-- Desktop Mockup -->
-                <div class="bg-white rounded-2xl shadow-2xl p-4 transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                  <div class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-xl p-6 h-80">
+                <div class="bg-white rounded-2xl shadow-2xl p-2 lg:p-4 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                  <div class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-xl p-3 lg:p-6 h-48 lg:h-80">
                     <div class="flex items-center justify-between mb-4">
                       <div class="flex space-x-2">
                         <div class="w-3 h-3 bg-red-500 rounded-full"></div>
@@ -133,20 +133,16 @@ import { fadeInAnimation, slideUpAnimation } from '../../animations/page-animati
                         </div>
                       </div>
                       
-                      <!-- Chart placeholder -->
-                      <div class="bg-white rounded-lg p-4 shadow-sm">
-                        <div class="h-16 bg-gradient-to-r from-accent-200 to-blue-200 rounded opacity-60"></div>
-                      </div>
                     </div>
                   </div>
                 </div>
 
                 <!-- Mobile Mockup -->
-                <div class="absolute -bottom-6 -right-6 w-32 bg-white rounded-2xl shadow-xl p-2 transform -rotate-12 hover:rotate-0 transition-transform duration-500">
-                  <div class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-xl p-3 h-48">
+                <div class="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 w-24 lg:w-32 bg-white rounded-2xl shadow-xl p-1 lg:p-2 transform -rotate-12 hover:rotate-0 transition-transform duration-500">
+                  <div class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-xl p-2 lg:p-3 h-32 lg:h-48">
                     <div class="text-center">
-                      <div class="w-16 h-16 bg-accent-500 rounded-full mx-auto mb-2 flex items-center justify-center">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <div class="w-10 h-10 lg:w-16 lg:h-16 bg-accent-500 rounded-full mx-auto mb-1 lg:mb-2 flex items-center justify-center">
+                        <svg class="w-5 h-5 lg:w-8 lg:h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                         </svg>
                       </div>

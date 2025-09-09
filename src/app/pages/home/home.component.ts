@@ -4,6 +4,9 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 
+// AOS Animation Library
+import * as AOS from 'aos';
+
 // Components
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { HeroComponent } from '../../components/hero/hero.component';
@@ -40,24 +43,40 @@ import { Counter } from '../../shared/utils/counter';
         <app-hero></app-hero>
 
         <!-- OKUL PANEL NEDİR SECTION -->
-        <section id="hero-2" class="section depth-section py-20 gradient-bg" data-depth="1">
+        <section id="hero-2" class="section depth-section py-8 lg:py-20 gradient-bg" data-depth="1">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center" 
+                 data-aos="fade-up" 
+                 data-aos-duration="800"
+                 data-aos-delay="100">
               <!-- LEFT: Copy -->
-              <div class="space-y-8">
-                <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6 animate-fade-in-up hero-title-glow" style="animation-delay: 0.1s">
+              <div class="space-y-4 lg:space-y-8">
+                <h2 class="text-2xl lg:text-5xl font-bold text-white mb-4 lg:mb-6 animate-fade-in-up hero-title-glow" 
+                    data-aos="fade-right" 
+                    data-aos-duration="600"
+                    data-aos-delay="200"
+                    style="animation-delay: 0.1s">
                   <span class="text-accent-500">Okul Panel</span> Nedir?
                 </h2>
                 
                 <!-- Açıklama Paragrafı -->
-                <p class="text-xl text-blue-100 leading-relaxed animate-fade-in-up hero-text-glow" style="animation-delay: 0.2s">
+                <p class="text-sm lg:text-xl text-blue-100 leading-relaxed animate-fade-in-up hero-text-glow" 
+                   data-aos="fade-right" 
+                   data-aos-duration="600"
+                   data-aos-delay="300"
+                   style="animation-delay: 0.2s">
                   Okul Panel, okul yönetim süreçlerini dijitalleştiren kapsamlı bir okul yönetim platformudur. 
                   Hem web hem de mobil uygulama üzerinden erişilebilen sistem; öğretmenler, öğrenciler ve 
                   veliler arasındaki iletişimi güçlendirir, akademik süreçleri kolayca takip etmenizi sağlar.
                 </p>
 
                 <!-- Badges -->
-                <div class="flex flex-wrap gap-3 animate-fade-in-up" aria-hidden="true" style="animation-delay: 0.3s">
+                <div class="flex flex-wrap gap-3 animate-fade-in-up" 
+                     data-aos="fade-right" 
+                     data-aos-duration="600"
+                     data-aos-delay="400"
+                     aria-hidden="true" 
+                     style="animation-delay: 0.3s">
                   <span class="px-4 py-2 bg-white/20 text-white border border-white/30 rounded-full text-sm font-medium hero-badge" style="animation-delay: 0.4s">
                     Öğrenci • Öğretmen • Veli
                   </span>
@@ -70,7 +89,11 @@ import { Counter } from '../../shared/utils/counter';
                 </div>
 
                 <!-- Features List -->
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-blue-100 animate-fade-in-up" style="animation-delay: 0.7s">
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-blue-100 animate-fade-in-up" 
+                    data-aos="fade-right" 
+                    data-aos-duration="600"
+                    data-aos-delay="500"
+                    style="animation-delay: 0.7s">
                   <li class="flex items-start space-x-3 hero-feature-item" style="animation-delay: 0.8s">
                     <svg class="w-6 h-6 text-accent-400 mt-1 flex-shrink-0 hero-feature-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -109,29 +132,88 @@ import { Counter } from '../../shared/utils/counter';
                   </li>
                 </ul>
 
+                <!-- Platform Features -->
+                <div class="mt-4 lg:mt-8 space-y-3 lg:space-y-6 animate-fade-in-up" 
+                     data-aos="fade-right" 
+                     data-aos-duration="600"
+                     data-aos-delay="600"
+                     style="animation-delay: 1.4s">
+                  <h3 class="text-lg lg:text-2xl font-bold text-white mb-2 lg:mb-4">Platform Özellikleri</h3>
+                  
+                  <!-- Online -->
+                  <div class="flex items-start space-x-3 hero-feature-item" style="animation-delay: 1.5s">
+                    <div class="w-8 h-8 lg:w-12 lg:h-12 bg-accent-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg class="w-4 h-4 lg:w-6 lg:h-6 text-accent-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="text-sm lg:text-lg font-semibold text-white mb-1">Online</h4>
+                      <p class="text-xs lg:text-sm text-blue-100">Bulut teknolojisi sayesinde sisteme kaydettiğiniz verilerinize her zaman güvenle erişebilirsiniz.</p>
+                    </div>
+                  </div>
+
+                  <!-- Her Yerden Erişim -->
+                  <div class="flex items-start space-x-3 hero-feature-item" style="animation-delay: 1.6s">
+                    <div class="w-8 h-8 lg:w-12 lg:h-12 bg-accent-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg class="w-4 h-4 lg:w-6 lg:h-6 text-accent-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="text-sm lg:text-lg font-semibold text-white mb-1">Her Yerden Erişim</h4>
+                      <p class="text-xs lg:text-sm text-blue-100">Bilgisayar veya Akıllı Telefon ile internet olan her yerden sisteme erişim ve kullanım sunar.</p>
+                    </div>
+                  </div>
+
+                  <!-- iOS ve Android Uygulama -->
+                  <div class="flex items-start space-x-3 hero-feature-item" style="animation-delay: 1.7s">
+                    <div class="w-8 h-8 lg:w-12 lg:h-12 bg-accent-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg class="w-4 h-4 lg:w-6 lg:h-6 text-accent-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="text-sm lg:text-lg font-semibold text-white mb-1">iOS ve Android Uygulama</h4>
+                      <p class="text-xs lg:text-sm text-blue-100">Google Play ve AppStore mağazalarından indirebileceğiniz Eyotek uygulaması mevcuttur.</p>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- Kapanış Paragrafı -->
-                <p class="text-lg text-blue-100 leading-relaxed animate-fade-in-up" style="animation-delay: 1.2s">
+                <p class="text-sm lg:text-lg text-blue-100 leading-relaxed animate-fade-in-up" 
+                   data-aos="fade-right" 
+                   data-aos-duration="600"
+                   data-aos-delay="700"
+                   style="animation-delay: 1.2s">
                   Tüm bu özellikler, modern bir okul yönetim sistemi olan <span class="text-accent-400 font-semibold">Okul Panel</span> 
                   ile okulunuzun dijital dönüşümünü kolaylaştırır.
                 </p>
 
                 <!-- CTAs -->
-                <div class="flex flex-wrap gap-4 animate-fade-in-up" style="animation-delay: 1.3s">
-                  <a routerLink="/about" class="px-8 py-4 bg-white/10 text-white border border-white/30 rounded-2xl font-semibold hover:bg-white/20 hover:scale-105 transition-all duration-300 hero-cta-primary" style="animation-delay: 1.4s">
+                <div class="flex flex-wrap gap-2 lg:gap-4 animate-fade-in-up" 
+                     data-aos="fade-right" 
+                     data-aos-duration="600"
+                     data-aos-delay="800"
+                     style="animation-delay: 1.3s">
+                  <a routerLink="/about" class="px-4 py-2 lg:px-8 lg:py-4 bg-white/10 text-white border border-white/30 rounded-2xl font-semibold hover:bg-white/20 hover:scale-105 transition-all duration-300 hero-cta-primary text-sm lg:text-base" style="animation-delay: 1.4s">
                     Detaylı Bilgi
                   </a>
-                  <a routerLink="/contact" class="px-8 py-4 bg-accent-500 text-white rounded-2xl font-semibold hover:bg-accent-600 hover:scale-105 transition-all duration-300 shadow-lg hero-cta-secondary" style="animation-delay: 1.5s">
+                  <a routerLink="/contact" class="px-4 py-2 lg:px-8 lg:py-4 bg-accent-500 text-white rounded-2xl font-semibold hover:bg-accent-600 hover:scale-105 transition-all duration-300 shadow-lg hero-cta-secondary text-sm lg:text-base" style="animation-delay: 1.5s">
                     Canlı Demo
                   </a>
                 </div>
               </div>
 
               <!-- RIGHT: Device Mocks -->
-              <div class="relative max-w-2xl mx-auto lg:max-w-none">
-                <div class="relative flex gap-4 justify-center items-start phone-mocks-container">
+              <div class="relative max-w-xs lg:max-w-2xl mx-auto lg:max-w-none xl:overflow-visible"
+                   data-aos="fade-left" 
+                   data-aos-duration="800"
+                   data-aos-delay="400">
+                <div class="relative flex gap-2 lg:gap-4 justify-center items-start phone-mocks-container">
                   <!-- Phone Mock 1: Ders Programı -->
                   <div class="relative">
-                    <svg class="w-full max-w-xs mx-auto phone-float" viewBox="0 0 320 640" role="img" aria-hidden="true">
+                    <svg class="w-full max-w-[280px] lg:max-w-xs mx-auto phone-float" viewBox="0 0 320 640" role="img" aria-hidden="true">
                     <defs>
                       <linearGradient id="phoneGrad" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="0%" stop-color="#1e293b"/>
@@ -215,9 +297,9 @@ import { Counter } from '../../shared/utils/counter';
                     </svg>
                   </div>
 
-                  <!-- Phone Mock 2: Öğretmen Profili -->
-                  <div class="relative transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                    <svg class="w-full max-w-[280px] mx-auto phone-float" viewBox="0 0 320 640" role="img" aria-hidden="true" style="animation-delay: 0.3s; transform: scale(0.85);">
+                  <!-- Phone Mock 2: Öğretmen Profili - Sadece desktop'ta görünür -->
+                  <div class="relative transform rotate-3 hover:rotate-0 transition-transform duration-500 hidden lg:block">
+                    <svg class="w-full max-w-[160px] lg:max-w-[280px] mx-auto phone-float" viewBox="0 0 320 640" role="img" aria-hidden="true" style="animation-delay: 0.3s; transform: scale(0.7) lg:scale(0.85);">
                       <defs>
                         <linearGradient id="teacherGrad" x1="0" y1="0" x2="0" y2="1">
                           <stop offset="0%" stop-color="#f8fafc"/>
@@ -306,56 +388,57 @@ import { Counter } from '../../shared/utils/counter';
                   </div>
 
                 </div>
+
               </div>
             </div>
           </div>
         </section>
 
       <!-- İstatistik Sayaç Bölümü -->
-      <section class="section py-6 bg-gradient-to-br from-accent-500 via-accent-600 to-accent-700 relative overflow-hidden">
+      <section class="section py-4 lg:py-6 bg-gradient-to-br from-accent-500 via-accent-600 to-accent-700 relative overflow-hidden">
         <!-- Arka Plan Watermark -->
         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h1 class="text-[12rem] lg:text-[16rem] font-black text-white/10 select-none tracking-wider watermark-animation">
+          <h1 class="text-[8rem] lg:text-[16rem] font-black text-white/10 select-none tracking-wider watermark-animation">
             OKUL PANEL
           </h1>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="text-center mb-4" [@fadeInUp]="'visible'">
-            <h2 class="text-2xl lg:text-3xl font-bold text-white mb-2">
-              <span class="text-yellow-300">İstatistikler</span>
+          <div class="text-center mb-2 lg:mb-4" [@fadeInUp]="'visible'">
+            <h2 class="text-2xl lg:text-3xl font-black text-white mb-1 lg:mb-2">
+              <span class="text-yellow-300 font-black">İstatistikler</span>
             </h2>
-            <p class="text-sm text-white/90 max-w-xl mx-auto">
+            <p class="text-xs lg:text-sm text-white/90 max-w-xl mx-auto">
               Binlerce okulun güvendiği, milyonlarca kullanıcının tercih ettiği eğitim yönetim sistemi
             </p>
           </div>
 
-          <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3" [@listStagger]="'visible'">
+          <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-1 sm:gap-3" [@listStagger]="'visible'">
             <!-- Günlük Giriş -->
-            <div class="text-center stats-card group">
-              <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-1 sm:mb-2 backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
+            <div class="text-center stats-card group p-2 lg:p-4">
+              <div class="w-6 h-6 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-1 sm:mb-2 backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
                 <svg class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 15 15" aria-hidden="true">
                   <path d="M6.554,9.639a.5.5,0,0,0,.707.707L9.928,7.669a.25.25,0,0,0,0-.354h0L7.261,4.639a.5.5,0,0,0-.707.707L8.2,7H1.5a.5.5,0,0,0,0,1H8.2ZM12,1H5.5a.5.5,0,0,0,0,1h6a.5.5,0,0,1,.5.5v10a.5.5,0,0,1-.5.5H5.25a.5.5,0,0,0,0,1H12a1,1,0,0,0,1-1V2A1,1,0,0,0,12,1Z"/>
                 </svg>
               </div>
-              <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white mb-1 counter-number" data-target="222993">
+              <div class="text-sm sm:text-xl md:text-2xl lg:text-3xl font-black text-white mb-1 counter-number" data-target="222993">
                 0
               </div>
               <p class="text-white/90 text-xs font-medium">Günlük Giriş</p>
               <div class="flex items-center justify-center mt-1">
-                <div class="w-1.5 h-1.5 bg-red-500 rounded-full mr-1"></div>
+                <div class="w-1 h-1 lg:w-1.5 lg:h-1.5 bg-red-500 rounded-full mr-1"></div>
                 <span class="text-white/70 text-xs">Canlı Veri</span>
               </div>
             </div>
 
             <!-- Aktif Kullanıcı -->
-            <div class="text-center stats-card group">
-              <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-1 sm:mb-2 backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
+            <div class="text-center stats-card group p-2 lg:p-4">
+              <div class="w-6 h-6 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-1 sm:mb-2 backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
                 <svg class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                   <path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/>
                 </svg>
               </div>
-              <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white mb-1 counter-number" data-target="531123">
+              <div class="text-sm sm:text-xl md:text-2xl lg:text-3xl font-black text-white mb-1 counter-number" data-target="531123">
                 0
               </div>
               <p class="text-white/90 text-xs font-medium">Aktif Kullanıcı</p>
@@ -443,22 +526,22 @@ import { Counter } from '../../shared/utils/counter';
       </section>
 
       <!-- Interactive Pricing Calculator -->
-      <section class="section py-20 bg-gradient-to-br from-neutral-50 via-blue-50 to-accent-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16" [@fadeInUp]="'visible'">
-            <h2 class="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">
+      <section class="section py-8 bg-gradient-to-br from-neutral-50 via-blue-50 to-accent-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-4 lg:mb-8" [@fadeInUp]="'visible'">
+            <h2 class="text-2xl lg:text-2xl font-bold text-neutral-900 mb-1 lg:mb-2">
               Basit ve <span class="text-accent-500">Şeffaf</span> Fiyatlandırma
             </h2>
-            <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+            <p class="hidden lg:block text-sm text-neutral-600 max-w-xl mx-auto">
               İhtiyacınıza uygun planı seçin. 3 gün deneme süreci ile sistemi test edin.
             </p>
           </div>
 
           <!-- Interactive Calculator Card -->
-          <div class="bg-white rounded-3xl shadow-2xl border border-neutral-200 p-8 mb-12" [@fadeInUp]="'visible'">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="bg-white rounded-2xl shadow-xl border border-neutral-200 p-4 mb-6 hidden lg:block" [@fadeInUp]="'visible'">
+            <div class="grid lg:grid-cols-2 gap-6 items-center">
               <!-- Left: Interactive Controls -->
-              <div class="space-y-8">
+              <div class="space-y-4">
                 <!-- Annual Pricing Info -->
                 <div class="text-center">
                   <div class="inline-flex items-center px-6 py-3 bg-green-100 text-green-800 rounded-2xl font-semibold">
@@ -471,12 +554,12 @@ import { Counter } from '../../shared/utils/counter';
 
                 <!-- School Type Selection -->
                 <div class="text-center">
-                  <h4 class="font-bold text-neutral-900 text-lg mb-4">Okul Türü</h4>
+                  <h4 class="font-bold text-neutral-900 text-sm mb-2">Okul Türü</h4>
                   <div class="inline-flex bg-neutral-100 rounded-2xl p-1">
                     <button
                       (click)="updateSchoolType('private')"
                       [class]="schoolType() === 'private' ? 'bg-accent-500 text-white shadow-lg' : 'text-neutral-600'"
-                      class="px-6 py-3 rounded-xl font-semibold transition-all duration-300"
+                      class="px-4 py-2 rounded-xl font-semibold transition-all duration-300 text-sm"
                       aria-label="Özel okul fiyatlandırması seç"
                     >
                       Özel Okul
@@ -484,7 +567,7 @@ import { Counter } from '../../shared/utils/counter';
                     <button
                       (click)="updateSchoolType('public')"
                       [class]="schoolType() === 'public' ? 'bg-accent-500 text-white shadow-lg' : 'text-neutral-600'"
-                      class="px-6 py-3 rounded-xl font-semibold transition-all duration-300"
+                      class="px-4 py-2 rounded-xl font-semibold transition-all duration-300 text-sm"
                       aria-label="Devlet okulu fiyatlandırması seç"
                     >
                       Devlet Okulu
@@ -494,8 +577,8 @@ import { Counter } from '../../shared/utils/counter';
 
                 <!-- Student Count Input -->
                 <div class="space-y-4">
-                  <label for="homeStudentCount" class="block text-lg font-bold text-neutral-700">
-                    Öğrenci Sayısı: <span class="text-accent-600 text-2xl">{{ currentStudentCount() }}</span>
+                  <label for="homeStudentCount" class="block text-sm font-bold text-neutral-700">
+                    Öğrenci Sayısı: <span class="text-accent-600 text-lg">{{ currentStudentCount() }}</span>
                   </label>
                   
                   <!-- Enhanced Range Slider with Tooltip -->
@@ -579,16 +662,16 @@ import { Counter } from '../../shared/utils/counter';
               </div>
 
               <!-- Right: Price Display & Features -->
-              <div class="space-y-8">
+              <div class="space-y-4">
                 <!-- Enhanced Price Display -->
                 <div class="text-center">
                   @if (schoolType() === 'public') {
                     <!-- Devlet Okulu Özel Mesaj -->
                     <div class="relative">
-                      <div class="text-4xl font-bold text-primary-950 mb-4">
+                      <div class="text-2xl font-bold text-primary-950 mb-2">
                         Özel Fiyatlandırma
                       </div>
-                      <div class="text-lg text-neutral-600 mb-6">
+                      <div class="text-sm text-neutral-600 mb-4">
                         Devlet okulları için özel fiyatlandırma mevcuttur
                       </div>
                       <a
@@ -605,10 +688,10 @@ import { Counter } from '../../shared/utils/counter';
                   } @else {
                     <!-- Özel Okul Fiyatlandırması -->
                     <div class="relative">
-                      <div class="text-5xl font-bold text-primary-950 mb-2 relative">
+                      <div class="text-3xl font-bold text-primary-950 mb-1 relative">
                         <span class="animated-price price-highlight">{{ animatedPrice() }}</span>
                       </div>
-                      <div class="text-lg text-neutral-600 mb-4">
+                      <div class="text-sm text-neutral-600 mb-2">
                         {{ calculation().studentCount }} öğrenci için ≈ {{ pricingService.formatPrice(calculation().perStudentPerYear) }}/öğrenci/yıl
                       </div>
                       <div class="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
@@ -646,7 +729,7 @@ import { Counter } from '../../shared/utils/counter';
                 <!-- Enhanced Features Grid -->
                 <div class="grid grid-cols-2 gap-4">
                   <div class="space-y-3">
-                    <h4 class="font-bold text-neutral-900 text-lg flex items-center">
+                    <h4 class="font-bold text-neutral-900 text-sm flex items-center">
                       <div class="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center mr-3">
                         <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -670,7 +753,7 @@ import { Counter } from '../../shared/utils/counter';
                     </ul>
                   </div>
                   <div class="space-y-3">
-                    <h4 class="font-bold text-neutral-900 text-lg flex items-center">
+                    <h4 class="font-bold text-neutral-900 text-sm flex items-center">
                       <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
                         <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -755,7 +838,7 @@ import { Counter } from '../../shared/utils/counter';
 
           <!-- Additional Info with Animation -->
           <div class="text-center" [@fadeInUp]="'visible'">
-            <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <div class="flex flex-wrap justify-center gap-3 mb-3">
               <div class="flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold hover:scale-105 transition-transform">
                 <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -771,7 +854,7 @@ import { Counter } from '../../shared/utils/counter';
             </div>
             <a 
               routerLink="/pricing" 
-              class="inline-flex items-center text-accent-600 hover:text-accent-700 font-bold text-lg hover:scale-105 transition-all duration-300"
+              class="inline-flex items-center text-accent-600 hover:text-accent-700 font-bold text-sm hover:scale-105 transition-all duration-300"
             >
               Detaylı fiyatlandırma ve karşılaştırma
               <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">
@@ -780,37 +863,43 @@ import { Counter } from '../../shared/utils/counter';
             </a>
           </div>
         </div>
-      </section>
 
-      <!-- Stats Section -->
-      <section class="section py-16 bg-gradient-to-r from-primary-950 to-blue-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center" [@listStagger]="'visible'">
-            
-            <div class="stats-card">
-              <div class="text-4xl lg:text-5xl font-bold mb-2 text-accent-400">
-                {{ schoolCount() }}+
-              </div>
-              <div class="text-lg text-blue-100">Okul</div>
-              <div class="text-sm text-blue-200 mt-1">Aktif kullanım</div>
+        <!-- Mobile Pricing CTA -->
+        <div class="lg:hidden">
+          <div class="bg-gradient-to-r from-accent-500 to-accent-600 rounded-2xl p-6 text-center shadow-xl" [@fadeInUp]="'visible'">
+            <div class="mb-4">
+              <svg class="w-12 h-12 text-white mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
             </div>
-
-            <div class="stats-card">
-              <div class="text-4xl lg:text-5xl font-bold mb-2 text-accent-400">
-                {{ studentCount().toLocaleString('tr-TR') }}+
+            <h3 class="text-xl font-bold text-white mb-2">Detaylı Fiyatlandırma</h3>
+            <p class="text-white/90 text-sm mb-4">
+              Fiyatlandırmalar öğrenci başı hesaplanmaktadır
+            </p>
+            <div class="space-y-2 text-xs text-white/80 mb-6">
+              <div class="flex items-center justify-center">
+                <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                3 gün deneme süreci
               </div>
-              <div class="text-lg text-blue-100">Öğrenci</div>
-              <div class="text-sm text-blue-200 mt-1">Kayıtlı kullanıcı</div>
-            </div>
-
-            <div class="stats-card">
-              <div class="text-4xl lg:text-5xl font-bold mb-2 text-accent-400">
-                %{{ satisfactionRate() }}
+              <div class="flex items-center justify-center">
+                <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                Kurulum ücretsiz
               </div>
-              <div class="text-lg text-blue-100">Memnuniyet</div>
-              <div class="text-sm text-blue-200 mt-1">Kullanıcı puanı</div>
             </div>
-
+            <a routerLink="/pricing" 
+               class="inline-flex items-center justify-center w-full bg-white text-accent-600 rounded-xl py-3 px-6 font-bold text-lg hover:bg-gray-50 hover:scale-105 transition-all duration-300 shadow-lg">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              Fiyatlandırma Sayfasına Göz Atın
+              <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -1473,9 +1562,6 @@ export class HomeComponent implements OnInit {
 
   // Stats for demo counter animation
   statsAnimated = signal(false);
-  schoolCount = signal(0);
-  studentCount = signal(0);
-  satisfactionRate = signal(0);
 
   // Current time for live data display
   currentTime = new Date();
@@ -1519,6 +1605,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.setupSEO();
+    
+    // Initialize AOS (Animate On Scroll)
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+      });
+    }
     
     // Initialize display price
     const initialCalculation = this.pricingService.getBasicCalculation(100);
@@ -1586,25 +1682,6 @@ export class HomeComponent implements OnInit {
     if (this.statsAnimated()) return;
     
     this.statsAnimated.set(true);
-
-    // Animate school count
-    Counter.count(0, 150, (value) => {
-      this.schoolCount.set(value);
-    }, 2000, this.platformId);
-
-    // Animate student count with delay
-    setTimeout(() => {
-      Counter.count(0, 25000, (value) => {
-        this.studentCount.set(value);
-      }, 2500, this.platformId);
-    }, 300);
-
-    // Animate satisfaction rate with delay
-    setTimeout(() => {
-      Counter.count(0, 98, (value) => {
-        this.satisfactionRate.set(value);
-      }, 2000, this.platformId);
-    }, 600);
   }
 
   private animateCounters(): void {

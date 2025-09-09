@@ -29,7 +29,7 @@ import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation }
                 Kapsamlı <span class="text-accent-500">Modüller</span>
               </h1>
               <p class="text-xl lg:text-2xl text-white/80 max-w-4xl mx-auto">
-                Her kullanıcı grubuna özel tasarlanmış modüller ile tüm eğitim süreçlerinizi tek platformda yönetin.
+                Her kullanıcı grubuna özel hazırlanmış modüller sayesinde yoklama, not, ödev, sınav ve iletişim süreçlerini tek platformda sorunsuz yönetin.
               </p>
             </div>
           </div>
@@ -75,7 +75,7 @@ import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation }
                 Tüm Modülleri Deneyimleyin
               </h2>
               <p class="text-xl text-white/80 mb-8">
-                30 gün ücretsiz deneme ile tüm modülleri test edin.
+                Okul Panel'in öğrenci, öğretmen ve veliye özel modüllerini tanıyın. Eğitim süreçlerinizi tek panelden nasıl yöneteceğinizi görün.
               </p>
               <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12" [@stagger]>
                 <a routerLink="/contact" class="btn-primary px-8 py-3" [@scaleIn]>Demo Talep Et</a>

@@ -1,6 +1,6 @@
 import { Component, OnInit, inject, signal, computed, effect, PLATFORM_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, ActivatedRoute } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 
@@ -26,10 +26,10 @@ import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation }
                 ← Ana Sayfaya Dön
               </a>
               <h1 class="text-4xl lg:text-6xl font-bold mb-6">
-                Şeffaf <span class="text-accent-500">Fiyatlandırma</span>
+                <span class="text-accent-500">Şeffaf</span> Fiyatlandırma
               </h1>
               <p class="text-xl lg:text-2xl text-white/80 max-w-4xl mx-auto">
-                İhtiyacınıza uygun paketi seçin. 3 gün deneme süreci ile sistemi test edin.
+                İhtiyacınıza göre esnek fiyatlandırma. Öğrenci sayısı baz alınarak hesaplanan ücretlendirme modeli ile her okul için adil ve şeffaf çözümler sunuyoruz. Devlet okulları için özel tekliflere iletişim kanallarımız üzerinden ulaşabilirsiniz.
               </p>
             </div>
           </div>
@@ -58,20 +58,28 @@ import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation }
               <div class="grid lg:grid-cols-2 gap-8 items-center">
                 <!-- Left: Controls -->
                 <div class="space-y-6">
-                  <!-- School Type Info -->
-                  <div class="bg-white/20 border border-white/30 rounded-lg p-3">
-                    <div class="flex items-start">
-                      <svg class="w-5 h-5 text-accent-400 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                      </svg>
-                      <div>
-                        <h4 class="font-semibold text-white text-sm mb-1">Okul Türü</h4>
-                        <p class="text-white/80 text-xs">
-                          <strong>Özel Okullar:</strong> Tam destek paketi<br>
-                          <strong>Devlet Okulları:</strong> Özel fiyatlandırma
-                        </p>
-                      </div>
+                  <!-- School Type Selection -->
+                  <div class="bg-white/20 border border-white/30 rounded-lg p-4">
+                    <h4 class="font-semibold text-white text-sm mb-3">Okul Türü Seçin</h4>
+                    <div class="flex space-x-2">
+                      <button 
+                        (click)="schoolType.set('private')"
+                        [class]="schoolType() === 'private' ? 'bg-accent-500 text-white shadow-lg' : 'bg-white/20 text-white/80 hover:bg-white/30'"
+                        class="flex-1 px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm"
+                      >
+                        Özel Okul
+                      </button>
+                      <button 
+                        (click)="schoolType.set('public')"
+                        [class]="schoolType() === 'public' ? 'bg-accent-500 text-white shadow-lg' : 'bg-white/20 text-white/80 hover:bg-white/30'"
+                        class="flex-1 px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm"
+                      >
+                        Devlet Okulu
+                      </button>
                     </div>
+                    <p class="text-white/70 text-xs mt-2">
+                      {{ schoolType() === 'private' ? 'Tam destek paketi ile özel okul fiyatlandırması' : 'Devlet okulları için özel fiyatlandırma' }}
+                    </p>
                   </div>
 
                   <!-- Student Count Input -->
@@ -115,7 +123,7 @@ import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation }
                   </div>
 
                   <!-- Price Breakdown -->
-                  <div class="bg-white/20 border border-white/30 rounded-xl p-4 text-xs">
+                  <div *ngIf="schoolType() === 'private'" class="bg-white/20 border border-white/30 rounded-xl p-4 text-xs">
                     <div class="space-y-1 text-white/80">
                       <div class="flex justify-between">
                         <span>Taban fiyat:</span>
@@ -137,11 +145,22 @@ import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation }
                 <div class="space-y-6">
                   <!-- Price Display -->
                   <div class="text-center">
-                    <div class="text-4xl font-bold text-white mb-2">
+                    <div *ngIf="schoolType() === 'private'; else publicSchoolDisplay" class="text-4xl font-bold text-white mb-2">
                       <span class="animated-number">{{ animatedPrice() }}</span>
                       <span class="text-lg font-normal text-white/70">/yıllık</span>
                     </div>
-                    <p class="text-sm text-white/60">
+                    <ng-template #publicSchoolDisplay>
+                      <div class="text-center">
+                        <div class="text-2xl font-bold text-white mb-4">Devlet Okulları İçin</div>
+                        <a routerLink="/contact" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-accent-500 to-accent-400 text-white font-semibold rounded-xl hover:from-accent-600 hover:to-accent-500 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+                          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                          </svg>
+                          İletişime Geç
+                        </a>
+                      </div>
+                    </ng-template>
+                    <p *ngIf="schoolType() === 'private'" class="text-sm text-white/60">
                       {{ calculation().studentCount }} öğrenci için
                     </p>
                   </div>
@@ -178,7 +197,7 @@ import { fadeInAnimation, slideUpAnimation, staggerAnimation, scaleInAnimation }
                       <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                       </svg>
-                      Detaylı Teklif Al
+                      {{ schoolType() === 'public' ? 'İletişime Geç' : 'Detaylı Teklif Al' }}
                     </a>
                   </div>
                 </div>
@@ -246,14 +265,16 @@ export class PricingPageComponent implements OnInit {
   private meta = inject(Meta);
   public pricingService = inject(PricingService);
   private platformId = inject(PLATFORM_ID);
+  private route = inject(ActivatedRoute);
 
   // Signals
   studentCount = signal(100);
   isScrolled = signal(false);
   animatedPrice = signal('₺0');
+  schoolType = signal<'private' | 'public'>('private');
 
   // Computed
-  calculation = computed(() => this.pricingService.getBasicCalculation(this.studentCount()));
+  calculation = computed(() => this.pricingService.getBasicCalculation(this.studentCount(), true, this.schoolType()));
   currentStudentCount = computed(() => this.studentCount());
 
   // Constraints
@@ -276,6 +297,13 @@ export class PricingPageComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content: 'Okul Panel fiyatlandırması. Öğrenci sayısına göre fiyat hesaplayın. 3 gün ücretsiz deneme. Şeffaf fiyatlandırma politikası.'
+    });
+
+    // Read query parameters
+    this.route.queryParams.subscribe(params => {
+      if (params['schoolType'] && (params['schoolType'] === 'private' || params['schoolType'] === 'public')) {
+        this.schoolType.set(params['schoolType']);
+      }
     });
 
     // Set initial animated price
