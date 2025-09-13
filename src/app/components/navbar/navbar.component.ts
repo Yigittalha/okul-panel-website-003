@@ -4,6 +4,7 @@ import { RouterModule, Router, NavigationEnd } from '@angular/router';
 import { ContentService } from '../../services/content.service';
 import { NavigationItem } from '../../interfaces/content.interface';
 import { filter } from 'rxjs/operators';
+import { NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -57,7 +58,9 @@ import { filter } from 'rxjs/operators';
               }
               
               <!-- Dropdown Menu Trigger -->
-              <div class="relative" (mouseenter)="subMenuOpen.set(true)" (mouseleave)="subMenuOpen.set(false)">
+              <div class="relative" 
+                   (mouseenter)="onSubMenuEnter()" 
+                   (mouseleave)="onSubMenuLeave()">
                 <button
                   class="text-white/80 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 focus:ring-offset-primary-950 rounded-lg px-3 py-2 transition-all duration-300 font-medium flex items-center space-x-1 hover:bg-white/10 whitespace-nowrap"
                   [attr.aria-label]="'Alt menüyü aç'"
@@ -72,19 +75,8 @@ import { filter } from 'rxjs/operators';
                 <!-- Dropdown Menu -->
                 <div 
                   data-submenu
-                  class="absolute top-full left-0 mt-3 w-80 bg-white/95 backdrop-blur-2xl rounded-2xl shadow-2xl border border-white/30 py-4 z-[70] transform transition-all duration-700 ease-out"
-                  [class.opacity-0]="!subMenuOpen()"
-                  [class.invisible]="!subMenuOpen()"
-                  [class.opacity-100]="subMenuOpen()"
+                  class="absolute top-full left-0 mt-3 w-80 bg-white/95 backdrop-blur-2xl rounded-2xl shadow-2xl border border-white/30 py-4 z-[70] transform transition-all duration-500 ease-out"
                   [class.visible]="subMenuOpen()"
-                  [class.scale-75]="!subMenuOpen()"
-                  [class.scale-100]="subMenuOpen()"
-                  [class.translate-y-6]="!subMenuOpen()"
-                  [class.translate-y-0]="subMenuOpen()"
-                  [class.rotate-2]="!subMenuOpen()"
-                  [class.rotate-0]="subMenuOpen()"
-                  [class.blur-sm]="!subMenuOpen()"
-                  [class.blur-0]="subMenuOpen()"
                 >
                   <a href="/about" class="group block px-6 py-4 text-gray-900 hover:bg-gradient-to-r hover:from-accent-50/80 hover:to-blue-50/80 hover:text-accent-800 transition-all duration-400 rounded-xl mx-2 hover:shadow-lg hover:scale-105 hover:backdrop-blur-md">
                     <div class="font-semibold text-lg group-hover:text-accent-800 transition-colors">Okul Panel Nedir?</div>
@@ -375,6 +367,21 @@ import { filter } from 'rxjs/operators';
       @apply lg:hidden;
     }
     
+    /* Dropdown menu initial state - hidden with opacity */
+    [data-submenu] {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(6px) scale(0.75) rotate(2deg);
+      filter: blur(4px);
+    }
+    
+    [data-submenu].visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0) scale(1) rotate(0deg);
+      filter: blur(0);
+    }
+    
     // Enhanced hover effects
     .group:hover img {
       transform: scale(1.1);
@@ -410,13 +417,35 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.navigationItems.set(this.contentService.getNavigationItems());
     
+          // Listen to navigation start
+          this.router.events
+            .pipe(filter(event => event instanceof NavigationStart))
+            .subscribe(() => {
+              this.isNavigating = true;
+              this.subMenuOpen.set(false);
+              this.mobileMenuOpen.set(false);
+              // Clear any pending timeouts
+              if (this.subMenuTimeout) {
+                clearTimeout(this.subMenuTimeout);
+                this.subMenuTimeout = null;
+              }
+              // Force close dropdown immediately and prevent reopening
+              this.subMenuOpen.set(false);
+            });
+
     // Listen to route changes
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
+        // Reset navigation flag after a short delay
+        setTimeout(() => {
+          this.isNavigating = false;
+        }, 500);
+        
         this.isHomePage.set(event.url === '/' || event.url === '');
-        // Close mobile menu on navigation
+        // Close mobile menu and submenu on navigation
         this.mobileMenuOpen.set(false);
+        this.subMenuOpen.set(false);
         
         // Update scroll state for new page
         if (isPlatformBrowser(this.platformId)) {
@@ -524,5 +553,34 @@ export class NavbarComponent implements OnInit {
     this.subMenuOpen.set(false);
   }
 
-  // Method removed - now using routerLink directly
+  onSubMenuEnter() {
+    // Don't open if navigating
+    if (this.isNavigating) {
+      return;
+    }
+
+    // Clear any existing timeout
+    if (this.subMenuTimeout) {
+      clearTimeout(this.subMenuTimeout);
+      this.subMenuTimeout = null;
+    }
+
+    this.subMenuOpen.set(true);
+  }
+
+  onSubMenuLeave() {
+    // Clear any existing timeout
+    if (this.subMenuTimeout) {
+      clearTimeout(this.subMenuTimeout);
+    }
+    
+    // Add delay to prevent flickering
+    this.subMenuTimeout = setTimeout(() => {
+      this.subMenuOpen.set(false);
+      this.subMenuTimeout = null;
+    }, 300);
+  }
+
+  isNavigating = false;
+  private subMenuTimeout: any = null;
 }

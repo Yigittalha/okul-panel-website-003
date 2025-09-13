@@ -22,10 +22,10 @@ import { prefersReducedMotion } from '../animations/tokens';
   standalone: true
 })
 export class InViewportDirective implements OnInit, OnDestroy {
-  @Input() appInViewport: string = 'in-view';
-  @Input() threshold: number = 0.1;
-  @Input() rootMargin: string = '0px';
-  @Input() triggerOnce: boolean = true;
+  @Input() appInViewport = 'in-view';
+  @Input() threshold = 0.1;
+  @Input() rootMargin = '0px';
+  @Input() triggerOnce = true;
 
   private observer?: IntersectionObserver;
   private hasTriggered = false;
@@ -33,7 +33,7 @@ export class InViewportDirective implements OnInit, OnDestroy {
   constructor(
     private el: ElementRef<HTMLElement>,
     private renderer: Renderer2,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: object
   ) {}
 
   ngOnInit() {

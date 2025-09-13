@@ -26,7 +26,7 @@ export class Counter {
     linear: (t: number): number => t,
   };
 
-  static animate(options: CounterOptions, platformId?: Object): () => void {
+  static animate(options: CounterOptions, platformId?: object): () => void {
     const {
       from,
       to,
@@ -99,8 +99,8 @@ export class Counter {
     from: number,
     to: number,
     onUpdate: (value: number) => void,
-    duration: number = 1000,
-    platformId?: Object
+    duration = 1000,
+    platformId?: object
   ): () => void {
     return Counter.animate({
       from,
@@ -118,9 +118,9 @@ export class Counter {
     from: number,
     to: number,
     onUpdate: (formattedValue: string) => void,
-    duration: number = 800,
-    locale: string = 'tr-TR',
-    currency: string = 'TRY'
+    duration = 800,
+    locale = 'tr-TR',
+    currency = 'TRY'
   ): () => void {
     const formatter = new Intl.NumberFormat(locale, {
       style: 'currency',
@@ -147,7 +147,7 @@ export class Counter {
     from: number,
     to: number,
     onUpdate: (formattedValue: string) => void,
-    duration: number = 1000
+    duration = 1000
   ): () => void {
     return Counter.animate({
       from,

@@ -526,82 +526,105 @@ import { Counter } from '../../shared/utils/counter';
       </section>
 
       <!-- Interactive Pricing Calculator -->
-      <section class="section py-8 bg-gradient-to-br from-neutral-50 via-blue-50 to-accent-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-4 lg:mb-8" [@fadeInUp]="'visible'">
-            <h2 class="text-2xl lg:text-2xl font-bold text-neutral-900 mb-1 lg:mb-2">
+      <section class="section py-8 gradient-bg relative overflow-hidden pricing-card-container">
+        <!-- Hero 2 ile aynı arka plan dekoratif elementleri -->
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-accent-500 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="text-center mb-6 lg:mb-8" [@fadeInUp]="'visible'">
+            <h2 class="text-2xl lg:text-3xl font-bold text-white mb-2 lg:mb-3">
               Basit ve <span class="text-accent-500">Şeffaf</span> Fiyatlandırma
             </h2>
-            <p class="hidden lg:block text-sm text-neutral-600 max-w-xl mx-auto">
+            <p class="text-sm lg:text-base text-white/80 max-w-2xl mx-auto">
               İhtiyacınıza uygun planı seçin. 3 gün deneme süreci ile sistemi test edin.
             </p>
           </div>
 
-          <!-- Interactive Calculator Card -->
-          <div class="bg-white rounded-2xl shadow-xl border border-neutral-200 p-4 mb-6 hidden lg:block" [@fadeInUp]="'visible'">
-            <div class="grid lg:grid-cols-2 gap-6 items-center">
-              <!-- Left: Interactive Controls -->
-              <div class="space-y-4">
-                <!-- Annual Pricing Info -->
-                <div class="text-center">
-                  <div class="inline-flex items-center px-6 py-3 bg-green-100 text-green-800 rounded-2xl font-semibold">
-                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                    Yıllık Fiyatlandırma - %15 İndirim
-                  </div>
+          <!-- Interactive Calculator Card - Ultra Kompakt -->
+          <div class="bg-white/95 backdrop-blur-md rounded-xl shadow-2xl border border-white/40 p-3 sm:p-4 mb-6 hidden md:block relative overflow-hidden" [@fadeInUp]="'visible'">
+            <!-- Kartın içinde de hafif mavi ton -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-cyan-50/10 pointer-events-none"></div>
+            
+            <!-- Ana Fiyat Gösterimi - Ultra Kompakt -->
+            <div class="text-center mb-4 relative z-10">
+              <div class="inline-block">
+                <div class="text-3xl font-black text-primary-950 mb-1 animated-price price-highlight">
+                  {{ animatedPrice() }}
                 </div>
+                <div class="text-sm text-neutral-600 mb-1">
+                  {{ calculation().studentCount }} öğrenci için
+                </div>
+                <div class="text-xs text-neutral-500 mb-2">
+                  ≈ {{ pricingService.formatPrice(calculation().perStudentPerYear) }}/öğrenci/yıl
+                </div>
+                <div class="inline-flex items-center px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">
+                  <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  3 gün ücretsiz deneme
+                </div>
+              </div>
+            </div>
 
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-4 items-start relative z-10">
+              <!-- Left: Interactive Controls -->
+              <div class="space-y-2 md:space-y-3">
                 <!-- School Type Selection -->
-                <div class="text-center">
-                  <h4 class="font-bold text-neutral-900 text-sm mb-2">Okul Türü</h4>
-                  <div class="inline-flex bg-neutral-100 rounded-2xl p-1">
+                <div class="bg-neutral-50 rounded-lg p-3">
+                  <h4 class="font-bold text-neutral-900 text-sm mb-2 text-center">Okul Türü</h4>
+                  <div class="grid grid-cols-2 gap-1">
                     <button
                       (click)="updateSchoolType('private')"
-                      [class]="schoolType() === 'private' ? 'bg-accent-500 text-white shadow-lg' : 'text-neutral-600'"
-                      class="px-4 py-2 rounded-xl font-semibold transition-all duration-300 text-sm"
+                      [class]="schoolType() === 'private' ? 'bg-accent-500 text-white shadow-lg border-2 border-accent-500' : 'bg-white text-neutral-700 border-2 border-neutral-200 hover:border-accent-300'"
+                      class="px-2 py-1 rounded-md font-semibold transition-all duration-300 text-xs"
                       aria-label="Özel okul fiyatlandırması seç"
                     >
                       Özel Okul
                     </button>
                     <button
                       (click)="updateSchoolType('public')"
-                      [class]="schoolType() === 'public' ? 'bg-accent-500 text-white shadow-lg' : 'text-neutral-600'"
-                      class="px-4 py-2 rounded-xl font-semibold transition-all duration-300 text-sm"
+                      [class]="schoolType() === 'public' ? 'bg-accent-500 text-white shadow-lg border-2 border-accent-500' : 'bg-white text-neutral-700 border-2 border-neutral-200 hover:border-accent-300'"
+                      class="px-2 py-1 rounded-md font-semibold transition-all duration-300 text-xs"
                       aria-label="Devlet okulu fiyatlandırması seç"
                     >
                       Devlet Okulu
                     </button>
                   </div>
+                  <div class="mt-1 text-center">
+                    <div class="inline-flex items-center px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">
+                      <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      </svg>
+                      Yıllık %15 İndirim
+                    </div>
+                  </div>
                 </div>
 
                 <!-- Student Count Input -->
-                <div class="space-y-4">
-                  <label for="homeStudentCount" class="block text-sm font-bold text-neutral-700">
-                    Öğrenci Sayısı: <span class="text-accent-600 text-lg">{{ currentStudentCount() }}</span>
-                  </label>
+                <div class="bg-neutral-50 rounded-lg p-3">
+                  <h4 class="font-bold text-neutral-900 text-sm mb-2 text-center">Öğrenci Sayısı</h4>
                   
-                  <!-- Enhanced Range Slider with Tooltip -->
-                  <div class="relative">
-                    <div class="relative">
-                      <input
-                        type="range"
-                        id="homeStudentCount"
-                        [min]="constraints.min"
-                        [max]="constraints.max"
-                        [step]="constraints.step"
-                        [ngModel]="currentStudentCount()"
-                        (ngModelChange)="updateStudentCount($event)"
-                        class="w-full h-3 bg-gradient-to-r from-neutral-200 to-neutral-300 rounded-full appearance-none cursor-pointer enhanced-slider"
-                        aria-label="Öğrenci sayısı slider"
-                      />
-                      <!-- Tooltip -->
-                      <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-primary-950 text-white px-3 py-1 rounded-lg text-sm font-medium opacity-0 transition-opacity duration-200 pointer-events-none slider-tooltip">
-                        {{ currentStudentCount() }} öğrenci
-                        <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-primary-950"></div>
-                      </div>
-                    </div>
-                    <div class="flex justify-between text-sm text-neutral-500 mt-2">
+                  <!-- Ultra Kompakt Sayı Gösterimi -->
+                  <div class="text-center mb-3">
+                    <div class="text-2xl font-black text-accent-600 mb-1">{{ currentStudentCount() }}</div>
+                    <div class="text-xs text-neutral-600">öğrenci</div>
+                  </div>
+                  
+                  <!-- Enhanced Range Slider -->
+                  <div class="relative mb-2">
+                    <input
+                      type="range"
+                      id="homeStudentCount"
+                      [min]="constraints.min"
+                      [max]="constraints.max"
+                      [step]="constraints.step"
+                      [ngModel]="currentStudentCount()"
+                      (ngModelChange)="updateStudentCount($event)"
+                      class="w-full h-2 bg-gradient-to-r from-accent-200 to-accent-300 rounded-full appearance-none cursor-pointer enhanced-slider"
+                      aria-label="Öğrenci sayısı slider"
+                    />
+                    <div class="flex justify-between text-xs text-neutral-500 mt-1">
                       <span class="font-medium">{{ constraints.min }}</span>
                       <span class="font-medium">{{ constraints.max }}</span>
                     </div>
@@ -609,13 +632,13 @@ import { Counter } from '../../shared/utils/counter';
 
                   <!-- Number Input with Step Buttons -->
                   <div class="flex justify-center">
-                    <div class="flex items-center bg-white border-2 border-neutral-300 rounded-2xl overflow-hidden">
+                    <div class="flex items-center bg-white border-2 border-accent-200 rounded-lg overflow-hidden shadow-sm">
                       <button
                         (click)="updateStudentCount(Math.max(constraints.min, currentStudentCount() - constraints.step))"
-                        class="px-4 py-4 bg-neutral-100 hover:bg-neutral-200 transition-colors"
+                        class="px-2 py-1 bg-accent-50 hover:bg-accent-100 transition-colors"
                         aria-label="Öğrenci sayısını azalt"
                       >
-                        <svg class="w-5 h-5 text-neutral-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <svg class="w-3 h-3 text-accent-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path d="M19 13H5v-2h14v2z"/>
                         </svg>
                       </button>
@@ -626,15 +649,15 @@ import { Counter } from '../../shared/utils/counter';
                         [step]="constraints.step"
                         [ngModel]="currentStudentCount()"
                         (ngModelChange)="updateStudentCount($event)"
-                        class="w-32 px-4 py-4 text-center text-xl font-bold focus:outline-none"
+                        class="w-20 px-2 py-1 text-center text-sm font-bold focus:outline-none bg-white"
                         aria-label="Öğrenci sayısı input"
                       />
                       <button
                         (click)="updateStudentCount(Math.min(constraints.max, currentStudentCount() + constraints.step))"
-                        class="px-4 py-4 bg-neutral-100 hover:bg-neutral-200 transition-colors"
+                        class="px-2 py-1 bg-accent-50 hover:bg-accent-100 transition-colors"
                         aria-label="Öğrenci sayısını artır"
                       >
-                        <svg class="w-5 h-5 text-neutral-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <svg class="w-3 h-3 text-accent-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
                         </svg>
                       </button>
@@ -642,82 +665,46 @@ import { Counter } from '../../shared/utils/counter';
                   </div>
                 </div>
 
-                <!-- Price Breakdown with Animation -->
-                <div class="bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-2xl p-6 space-y-3">
-                  <div class="flex justify-between items-center text-sm">
-                    <span class="text-neutral-600">Taban fiyat:</span>
-                    <span class="font-semibold text-neutral-800">{{ pricingService.formatPrice(calculation().basePrice) }}</span>
-                  </div>
-                  <div class="flex justify-between items-center text-sm">
-                    <span class="text-neutral-600">Öğrenci başı:</span>
-                    <span class="font-semibold text-neutral-800">{{ pricingService.formatPrice(calculation().perStudentPrice) }}</span>
-                  </div>
-                  <div class="border-t border-neutral-300 pt-3">
-                    <div class="flex justify-between items-center">
-                      <span class="font-bold text-neutral-900">Toplam:</span>
-                      <span class="text-2xl font-bold text-primary-950 animated-price">{{ animatedPrice() }}</span>
+                <!-- Price Breakdown - Ultra Kompakt -->
+                <div class="bg-gradient-to-r from-accent-50 to-accent-100 rounded-lg p-3">
+                  <h4 class="font-bold text-neutral-900 text-sm mb-2 text-center">Fiyat Detayları</h4>
+                  <div class="space-y-1">
+                    <div class="flex justify-between items-center text-xs">
+                      <span class="text-neutral-600">Taban fiyat:</span>
+                      <span class="font-semibold text-neutral-800">{{ pricingService.formatPrice(calculation().basePrice) }}</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs">
+                      <span class="text-neutral-600">Öğrenci başı:</span>
+                      <span class="font-semibold text-neutral-800">{{ pricingService.formatPrice(calculation().perStudentPrice) }}</span>
+                    </div>
+                    <div class="border-t border-accent-200 pt-1">
+                      <div class="flex justify-between items-center">
+                        <span class="font-bold text-neutral-900">Toplam:</span>
+                        <span class="text-base font-bold text-accent-600">{{ animatedPrice() }}</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Right: Price Display & Features -->
-              <div class="space-y-4">
-                <!-- Enhanced Price Display -->
+              <!-- Right: Features & CTA -->
+              <div class="space-y-2 md:space-y-3">
+                <!-- Trust Badges -->
                 <div class="text-center">
-                  @if (schoolType() === 'public') {
-                    <!-- Devlet Okulu Özel Mesaj -->
-                    <div class="relative">
-                      <div class="text-2xl font-bold text-primary-950 mb-2">
-                        Özel Fiyatlandırma
-                      </div>
-                      <div class="text-sm text-neutral-600 mb-4">
-                        Devlet okulları için özel fiyatlandırma mevcuttur
-                      </div>
-                      <a
-                        routerLink="/contact"
-                        class="inline-flex items-center px-6 py-3 bg-blue-100 text-blue-800 rounded-full text-lg font-semibold mb-6 hover:bg-blue-200 hover:scale-105 transition-all duration-300 cursor-pointer"
-                        aria-label="Devlet okulu için özel fiyatlandırma almak üzere iletişim sayfasına git"
-                      >
-                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                        </svg>
-                        İletişime Geçin
-                      </a>
-                    </div>
-                  } @else {
-                    <!-- Özel Okul Fiyatlandırması -->
-                    <div class="relative">
-                      <div class="text-3xl font-bold text-primary-950 mb-1 relative">
-                        <span class="animated-price price-highlight">{{ animatedPrice() }}</span>
-                      </div>
-                      <div class="text-sm text-neutral-600 mb-2">
-                        {{ calculation().studentCount }} öğrenci için ≈ {{ pricingService.formatPrice(calculation().perStudentPerYear) }}/öğrenci/yıl
-                      </div>
-                      <div class="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
-                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                        3 gün deneme
-                      </div>
-                    </div>
-                  }
-                  
-                  <!-- Trust Badges -->
-                  <div class="flex justify-center gap-2 mb-6">
-                    <div class="flex items-center px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <div class="flex justify-center gap-1 mb-3">
+                    <div class="flex items-center px-2 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
                       <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
                       </svg>
                       KVKK
                     </div>
-                    <div class="flex items-center px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs font-medium">
+                    <div class="flex items-center px-2 py-1 bg-green-50 text-green-700 rounded-full text-xs font-medium">
                       <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                       </svg>
                       ISO 27001
                     </div>
-                    <div class="flex items-center px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-medium">
+                    <div class="flex items-center px-2 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-medium">
                       <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                       </svg>
@@ -726,68 +713,71 @@ import { Counter } from '../../shared/utils/counter';
                   </div>
                 </div>
 
-                <!-- Enhanced Features Grid -->
-                <div class="grid grid-cols-2 gap-4">
-                  <div class="space-y-3">
-                    <h4 class="font-bold text-neutral-900 text-sm flex items-center">
-                      <div class="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center mr-3">
-                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <!-- Features List - Ultra Kompakt -->
+                <div class="bg-neutral-50 rounded-lg p-3">
+                  <h4 class="font-bold text-neutral-900 text-sm mb-2 text-center">Dahil Olan Özellikler</h4>
+                  <div class="grid grid-cols-2 gap-1">
+                    <div class="flex items-center text-xs text-neutral-700">
+                      <div class="w-3 h-3 bg-green-100 rounded-full flex items-center justify-center mr-1">
+                        <svg class="w-2 h-2 text-green-600" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                         </svg>
                       </div>
-                      Özellikler
-                    </h4>
-                    <ul class="space-y-2 text-sm text-neutral-600">
-                      <li class="flex items-center hover:text-green-600 transition-colors">
-                        <span class="text-green-500 mr-2">✓</span> Öğrenci Yönetimi
-                      </li>
-                      <li class="flex items-center hover:text-green-600 transition-colors">
-                        <span class="text-green-500 mr-2">✓</span> Veli Bildirimleri
-                      </li>
-                      <li class="flex items-center hover:text-green-600 transition-colors">
-                        <span class="text-green-500 mr-2">✓</span> Ders Programı
-                      </li>
-                      <li class="flex items-center hover:text-green-600 transition-colors">
-                        <span class="text-green-500 mr-2">✓</span> Devamsızlık
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="space-y-3">
-                    <h4 class="font-bold text-neutral-900 text-sm flex items-center">
-                      <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
-                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      Öğrenci Yönetimi
+                    </div>
+                    <div class="flex items-center text-xs text-neutral-700">
+                      <div class="w-3 h-3 bg-green-100 rounded-full flex items-center justify-center mr-1">
+                        <svg class="w-2 h-2 text-green-600" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                         </svg>
                       </div>
-                      Destek
-                    </h4>
-                    <ul class="space-y-2 text-sm text-neutral-600">
-                      <li class="flex items-center hover:text-blue-600 transition-colors">
-                        <span class="text-blue-500 mr-2">✓</span> 7/24 Destek
-                      </li>
-                      <li class="flex items-center hover:text-blue-600 transition-colors">
-                        <span class="text-blue-500 mr-2">✓</span> Ücretsiz Kurulum
-                      </li>
-                      <li class="flex items-center hover:text-blue-600 transition-colors">
-                        <span class="text-blue-500 mr-2">✓</span> Eğitim
-                      </li>
-                      <li class="flex items-center hover:text-blue-600 transition-colors">
-                        <span class="text-blue-500 mr-2">✓</span> Güncellemeler
-                      </li>
-                    </ul>
+                      Veli Bildirimleri
+                    </div>
+                    <div class="flex items-center text-xs text-neutral-700">
+                      <div class="w-3 h-3 bg-green-100 rounded-full flex items-center justify-center mr-1">
+                        <svg class="w-2 h-2 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                      </div>
+                      Ders Programı
+                    </div>
+                    <div class="flex items-center text-xs text-neutral-700">
+                      <div class="w-3 h-3 bg-green-100 rounded-full flex items-center justify-center mr-1">
+                        <svg class="w-2 h-2 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                      </div>
+                      Devamsızlık
+                    </div>
+                    <div class="flex items-center text-xs text-neutral-700">
+                      <div class="w-3 h-3 bg-green-100 rounded-full flex items-center justify-center mr-1">
+                        <svg class="w-2 h-2 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                      </div>
+                      7/24 Destek
+                    </div>
+                    <div class="flex items-center text-xs text-neutral-700">
+                      <div class="w-3 h-3 bg-green-100 rounded-full flex items-center justify-center mr-1">
+                        <svg class="w-2 h-2 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                      </div>
+                      Ücretsiz Kurulum
+                    </div>
                   </div>
                 </div>
 
-                <!-- Enhanced CTA -->
-                <div class="text-center space-y-4">
+                <!-- CTA Buttons -->
+                <div class="text-center space-y-1">
                   @if (schoolType() === 'public') {
                     <!-- Devlet Okulu CTA -->
                     <a
                       routerLink="/contact"
-                      class="inline-flex items-center justify-center w-full max-w-md px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold rounded-2xl hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                      class="inline-flex items-center justify-center w-full px-3 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold rounded-lg hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                       aria-label="Devlet okulu için özel fiyatlandırma almak üzere iletişim sayfasına git"
                     >
-                      <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                       </svg>
                       Özel Fiyatlandırma Al
@@ -796,10 +786,10 @@ import { Counter } from '../../shared/utils/counter';
                     <!-- Özel Okul CTA -->
                     <a
                       routerLink="/contact"
-                      class="inline-flex items-center justify-center w-full max-w-md px-8 py-4 bg-gradient-to-r from-accent-500 to-accent-600 text-white font-bold rounded-2xl hover:from-accent-600 hover:to-accent-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                      class="inline-flex items-center justify-center w-full px-3 py-2 bg-gradient-to-r from-accent-500 to-accent-600 text-white font-bold rounded-lg hover:from-accent-600 hover:to-accent-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                       aria-label="Detaylı teklif almak için iletişim sayfasına git"
                     >
-                      <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                       </svg>
                       Detaylı Teklif Al
@@ -807,7 +797,7 @@ import { Counter } from '../../shared/utils/counter';
                     <div>
                       <a
                         routerLink="/contact"
-                        class="text-accent-600 hover:text-accent-700 font-semibold text-sm hover:underline transition-colors"
+                        class="text-accent-600 hover:text-accent-700 font-semibold text-xs hover:underline transition-colors"
                         aria-label="Hemen canlı demo planlamak için iletişim sayfasına git"
                       >
                         Hemen canlı demo planla →
@@ -818,17 +808,17 @@ import { Counter } from '../../shared/utils/counter';
               </div>
             </div>
 
-            <!-- Enhanced Warning -->
-            <div class="bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-2xl p-6 mt-8">
+            <!-- Enhanced Warning - Ultra Kompakt -->
+            <div class="bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-lg p-3 mt-4">
               <div class="flex items-start">
-                <div class="w-12 h-12 bg-amber-500 rounded-xl flex items-center justify-center mr-4 shadow-lg">
-                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <div class="w-6 h-6 bg-amber-500 rounded-md flex items-center justify-center mr-2 shadow-lg">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
                   </svg>
                 </div>
                 <div>
-                  <h4 class="font-bold text-amber-800 text-lg mb-2">Önemli Uyarı</h4>
-                  <p class="text-amber-700 text-sm">
+                  <h4 class="font-bold text-amber-800 text-xs mb-1">Önemli Uyarı</h4>
+                  <p class="text-amber-700 text-xs">
                     {{ pricingService.getDetailedDisclaimerText() }}
                   </p>
                 </div>
@@ -864,42 +854,65 @@ import { Counter } from '../../shared/utils/counter';
           </div>
         </div>
 
-        <!-- Mobile Pricing CTA -->
-        <div class="lg:hidden">
-          <div class="bg-gradient-to-r from-accent-500 to-accent-600 rounded-2xl p-6 text-center shadow-xl" [@fadeInUp]="'visible'">
-            <div class="mb-4">
-              <svg class="w-12 h-12 text-white mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">Detaylı Fiyatlandırma</h3>
-            <p class="text-white/90 text-sm mb-4">
-              Fiyatlandırmalar öğrenci başı hesaplanmaktadır
-            </p>
-            <div class="space-y-2 text-xs text-white/80 mb-6">
-              <div class="flex items-center justify-center">
-                <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 24 24">
+        <!-- Mobile Pricing CTA - Kompakt -->
+        <div class="md:hidden relative z-10">
+          <div class="bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl p-4 text-center shadow-xl relative overflow-hidden" [@fadeInUp]="'visible'">
+            <!-- Mobile kart için de hafif mavi ton -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-cyan-500/10 pointer-events-none"></div>
+            <div class="relative z-10">
+              <!-- Kompakt Fiyat Gösterimi -->
+              <div class="mb-3">
+                <div class="text-2xl font-black text-white mb-1">{{ animatedPrice() }}</div>
+                <div class="text-sm text-white/90 mb-1">{{ calculation().studentCount }} öğrenci için</div>
+                <div class="text-xs text-white/80 mb-2">≈ {{ pricingService.formatPrice(calculation().perStudentPerYear) }}/öğrenci/yıl</div>
+                <div class="inline-flex items-center px-2 py-1 bg-white/20 text-white rounded-full text-xs font-semibold mb-3">
+                  <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  3 gün ücretsiz deneme
+                </div>
+              </div>
+
+              <!-- Kompakt Özellikler -->
+              <div class="grid grid-cols-2 gap-1 text-xs text-white/80 mb-4">
+                <div class="flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white mr-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  Öğrenci Yönetimi
+                </div>
+                <div class="flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white mr-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  Veli Bildirimleri
+                </div>
+                <div class="flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white mr-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  Ders Programı
+                </div>
+                <div class="flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white mr-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  Devamsızlık
+                </div>
+              </div>
+
+              <!-- Kompakt CTA Button -->
+              <a routerLink="/pricing" 
+                 class="inline-flex items-center justify-center w-full bg-white text-accent-600 rounded-lg py-2 px-4 font-bold text-sm hover:bg-gray-50 hover:scale-105 transition-all duration-300 shadow-lg">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
-                3 gün deneme süreci
-              </div>
-              <div class="flex items-center justify-center">
-                <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                Fiyatlandırma Sayfasına Göz Atın
+                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
                 </svg>
-                Kurulum ücretsiz
-              </div>
+              </a>
             </div>
-            <a routerLink="/pricing" 
-               class="inline-flex items-center justify-center w-full bg-white text-accent-600 rounded-xl py-3 px-6 font-bold text-lg hover:bg-gray-50 hover:scale-105 transition-all duration-300 shadow-lg">
-              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-              </svg>
-              Fiyatlandırma Sayfasına Göz Atın
-              <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
-              </svg>
-            </a>
           </div>
         </div>
       </section>
@@ -1530,6 +1543,50 @@ import { Counter } from '../../shared/utils/counter';
       animation: watermarkFloat 20s ease-in-out infinite;
     }
 
+    /* Pricing Card Background Animations */
+    @keyframes pricingBackgroundFloat {
+      0%, 100% {
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+      }
+      25% {
+        transform: translateY(-10px) translateX(5px) rotate(1deg);
+      }
+      50% {
+        transform: translateY(-5px) translateX(-3px) rotate(-0.5deg);
+      }
+      75% {
+        transform: translateY(-8px) translateX(2px) rotate(0.5deg);
+      }
+    }
+
+    @keyframes pricingBackgroundGlow {
+      0%, 100% {
+        opacity: 0.1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.2;
+        transform: scale(1.1);
+      }
+    }
+
+    .pricing-background-element {
+      animation: pricingBackgroundFloat 8s ease-in-out infinite;
+    }
+
+    .pricing-background-glow {
+      animation: pricingBackgroundGlow 6s ease-in-out infinite;
+    }
+
+    /* Pricing Card Hover Effects */
+    .pricing-card-container:hover .pricing-background-element {
+      animation-duration: 4s;
+    }
+
+    .pricing-card-container:hover .pricing-background-glow {
+      animation-duration: 3s;
+    }
+
     /* Reduced Motion Support */
     @media (prefers-reduced-motion: reduce) {
       #hero-2 .animate-fade-in-up,
@@ -1543,7 +1600,9 @@ import { Counter } from '../../shared/utils/counter';
       #hero-2::before,
       .stats-card,
       .counter-number,
-      .watermark-animation {
+      .watermark-animation,
+      .pricing-background-element,
+      .pricing-background-glow {
         animation: none !important;
         opacity: 1 !important;
         transform: none !important;

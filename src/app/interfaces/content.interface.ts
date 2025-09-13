@@ -4,6 +4,8 @@ export interface Feature {
   description: string;
   icon: string;
   color?: string;
+  isAdvanced?: boolean;
+  tags?: string[];
 }
 
 export interface Module {

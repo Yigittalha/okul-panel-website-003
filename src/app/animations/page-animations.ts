@@ -29,6 +29,7 @@ export const slideUpAnimation = trigger('slideUp', [
   ]),
 ]);
 
+
 export const staggerAnimation = trigger('stagger', [
   transition('* => *', [
     query(
